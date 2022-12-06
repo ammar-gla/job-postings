@@ -405,7 +405,7 @@ The charts below compare the three-month rolling average of online jobs postings
   
   # Save
   save_GLA_plot(chart_name)
-  save_GLA_plot(chart_name,path=AD_HOC,w=10,h=8)
+  save_GLA_plot(chart_name,path=AD_HOC,w=10,h=6)
   
   # Plotly
   
