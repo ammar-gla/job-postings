@@ -1,0 +1,12 @@
+colnames(lfs_stats)
+date_day
+date_name
+sex_name
+geography_name
+value_type_name
+measures
+measures_name
+all_persons_aged_16_and_over
+total_unemployed_aged_16_and_over
+total_in_employment_aged_16_to_64
+total_economically_inactive_aged_16_to_64

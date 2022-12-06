@@ -1,0 +1,174 @@
+---
+title:  "<br> Analaysis of job postings in London"
+date: "`r format(Sys.Date(),'%B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    css:  !expr "here::here('FORMATTING','GLAstyle.css')"
+    includes:
+      in_header: !expr "here::here('FORMATTING','favicon.html')"
+      before_body: !expr "here::here('FORMATTING','header.html')"
+      after_body: !expr "here::here('FORMATTING','footer.html')"
+knit: (function(input, ...) {
+    rmarkdown::render(
+      input,
+      output_file = "London job postings",
+      envir = globalenv()
+    )
+  })
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+knitr::opts_chunk$set(echo = TRUE,scipen=999)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+
+```
+
+```{r all data, include = FALSE}
+
+  ################################################################################ 
+  # 00. LOAD LIBRARIES AND SET UP PATHS
+  ################################################################################ 
+  
+
+  library("here")
+  library("tidyverse")
+  library("ggplot2")
+  library("ggthemes")
+  library("nomisr")
+  library("devtools")
+  library("remotes")
+  library("scales")
+  library("gglaplot")
+  library("data.table")
+  library("janitor")
+  library("lubridate")
+  library("readr")
+  library("ggrepel")
+  library("plotly")
+  library("magrittr")
+  library("zoo")
+  library("openxlsx")
+  library("fontawesome")
+
+  #.............................................................................
+  
+  ### Paths
+  INPUT <- paste0(here("INPUT"),"/")
+  INTERMEDIATE <- paste0(here("INTERMEDIATE"),"/")
+  OUTPUT <- paste0(here("OUTPUT"),"/")
+  
+  #.............................................................................
+  
+  ### FUNCTIONS
+  ### For ease of referencing figures in the text
+  
+  pull_data <- function(var=NULL,dt_day=NULL,geo="london",sec="Overall") {
+    if (typ=="v") { #if a value
+      f_x <- function(x) value_form(x,s=3)
+    }
+    else if (typ=="%") { #if a percentage
+      f_x <- function(x) perc_form(x)
+    }
+    
+    if (is.null(dt_day)) {
+      data_point <- paye_master_long %>% 
+      filter(geography == geo & section_name == sec & date_day == max(date_day)) %>% 
+      pull(var)
+    }    else {
+      data_point <- paye_master_long %>% 
+      filter(geography == geo & section_name == sec & date_day == ymd(dt_day)) %>% 
+      pull(var)
+    }
+    
+    return(abs2(f_x(data_point))) # Format the value and remove negative signs
+  }
+  
+  # Slightly different function for the longer version of the data, which is more flexible
+  pull_data_det <- function(var="measure_value", #variable name
+                            dt_day=NULL, #date, if not take latest
+                            nat=NULL, #nationality
+                            meas=NULL, #if share or count
+                            geo="london", #geography
+                            sec="Overall", #industry sector
+                            typ="v",  #whether value or percentage format
+                            abs=TRUE, #whether signs should be removed
+                            decimals=NULL) { #specify number of decimal points
+    if (typ=="v") { #if a value
+      if (is.null(decimals))  f_x <- function(x) value_form(x,s=3)
+      else   f_x <- function(x) value_form(x,s=3,d=decimals)
+    }
+    else if (typ=="%") { #if a percentage
+      if (is.null(decimals)) f_x <- function(x) perc_form(x)
+      else f_x <- function(x) perc_form(x,d=decimals)
+    }
+    
+    if (is.null(dt_day)) {
+      data_point <- paye_master_long_detail %>% 
+      filter(geography == geo & section_name == sec & date_day == max(date_day) & nationality == nat & measure_name == meas) %>% 
+      pull(var)
+    }    else {
+      data_point <- paye_master_long_detail %>% 
+      filter(geography == geo & section_name == sec & nationality == nat & measure_name == meas & date_day == ymd(dt_day)) %>% 
+      pull(var)
+    }
+
+    if (abs==TRUE)  return(abs2(f_x(data_point))) # Format the value and remove negative signs
+    else if (abs==FALSE)  return(f_x(data_point)) # do not remove negative sign
+  }
+
+  ################################################################################ 
+  # 01. RUN DATA SCRIPT
+  ################################################################################   
+
+  source(here::here("SCRIPTS","01. Functions and init.r"))
+  
+  
+  ################################################################################ 
+  # 02. SETTINGS
+  ################################################################################  
+  
+  # Version of GLA theme for charting
+  gla_theme_type <- "default"
+  theme_set(theme_gla(gla_theme = gla_theme_type))
+  
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+## Summary of key points {.tabset}
+<br/>
+
+- sOME TEXT
+
+
+::: {.infobox .caution}
+
+Data on job posting location is less robust at more granular levels of geography.
+
+:::
+
+### Section 1
+asdasd
+asds
+
+### Section 2
+
+asd
+
+asd
+
+## Other main
+
+
+asdd
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+::: {.tocify-extend-page data-unique="tocify-extend-page" style="height: 0;"}
+:::

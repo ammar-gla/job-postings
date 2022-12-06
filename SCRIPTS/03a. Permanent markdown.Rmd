@@ -1,0 +1,433 @@
+---
+title:  "<br> Understanding online job postings data"
+date: "`r format(Sys.Date(),'%B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    css:  !expr "here::here('FORMATTING','GLAstyle.css')"
+    includes:
+      in_header: !expr "here::here('FORMATTING','favicon.html')"
+      before_body: !expr "here::here('FORMATTING','header.html')"
+      after_body: !expr "here::here('FORMATTING','footer.html')"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+knitr::opts_chunk$set(echo = TRUE,scipen=999)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+
+```
+
+```{r all data, include = FALSE}
+
+  ################################################################################ 
+  # 00. LOAD LIBRARIES AND SET UP PATHS
+  ################################################################################ 
+  
+  INPUT <- paste0(here::here(),"/INPUT/")
+  INTERMEDIATE <- paste0(here::here(),"/INTERMEDIATE/")
+  IMAGES <- paste0(here::here(),"/IMAGES/MAIN/")
+  FORMATTING <- paste0(here::here(),"/FORMATTING/")
+  OUTPUT <- paste0(here::here(),"/OUTPUT/")
+
+  ################################################################################ 
+  # 01. RUN DATA SCRIPT
+  ################################################################################   
+
+
+  
+  
+  ################################################################################ 
+  # 02. SETTINGS
+  ################################################################################  
+  
+  # Version of GLA theme for charting
+  gla_theme_type <- "default"
+  theme_set(theme_gla(gla_theme = gla_theme_type))
+  
+  # The latest date is 'last_month'
+  last_month_form <- format(ym(last_month),"%B %Y")
+  
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+## Introduction to the data
+<br/>
+
+The data we are using is sourced from Lightcast (formerly Emsi Burning Glass), a leading supplier of real-time labour market information. Lightcast is a US-based company with a strong presence in the UK. 
+
+Lightcast’s online job postings data are collected by web-scraping job postings created by employers, including online job boards and company websites. The information retrieved goes through a process that standardises and classifies postings according to a number of data elements including location, occupation classification, and qualifications. 
+
+Prior to our analysis, Lightcast also carries out data cleaning such as identifying and accounting for [duplicate job postings](https://kb.emsidata.com/faq/how-does-emsi-burning-glass-handle-duplicate-postings/) (e.g. because of multiple recruiters advertising at the same time) and applying minimum quality thresholds on some data fields. 
+
+<a href="#top">Back to top</a>
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+## Strengths and limitations 
+<br/>
+
+The quantity of vacancy data collected via web-scraping is increasing as more job openings are posted on the internet. As a source of data, this has several key advantages. For example, the data from Lightcast are updated frequently, include a large volume of data, and cover a wide range of information besides occupation (or job title), including desired skills, location, and salary information.
+
+This near real-time data can be used to track and assess the demand for labour in London, complementing more traditional sources of labour market information (LMI). 
+
+However, there are also challenges with using postings data from web-scraping. The Lightcast data should be treated with awareness of the following caveats: 
+ 
+-  The number of job adverts being posted online is not a direct measure of labour demand: the number of online postings could respond to other changes such as how positions are recruited for (e.g. more jobs being recruited for online over time). 
+
+-  Job adverts may not be removed from online vacancy boards immediately when the position is filled so the data may not fully reflect employers who have halted active recruitment; our analysis focuses on new postings within a given timeframe. 
+
+-  The scope of online job postings does not fully capture the scope of economic activity in London; not all jobs are posted online – some jobs are only advertised internally, while others are only be advertised by word-of-mouth or in shop windows.  
+
+-  The presentation and content of information listed in job postings inconsistent and often hard to compare – some employers provide an extensive wish-list of skills for a given job role, while others list only those essential to performing in the role. 
+
+-  In some cases, the location of a job posting is too high-level to be matched to a specific location; for example, many jobs are advertised at a ‘London’ level but cannot be assigned to a specific local authority area within the capital.  
+
+<a href="#top">Back to top</a>
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+
+## Comparison with UK data
+<br/>
+
+The [ONS publishes](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/jp9z/unem) official estimates of the stock of UK job vacancies based on a survey of UK employers, which is different to the method of collecting online job postings data performed by Lightcast.
+
+-  The ONS measure showed a steady increase in UK vacancies from 2012 until the beginning of the COVID-19 pandemic with only a minor decrease from early 2019 to 2020. 
+
+-  By comparison, the Lightcast data on online job postings has been more volatile with notable dips from 2013 to 2015 and from 2018 to 2019. 
+
+-  Both measures show steep falls after the introduction of lockdown measures in March 2020, followed by large increases from 2021 onwards. 
+
+<a href="#top">Back to top</a>
+
+``` {r ons_compare, echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+
+#...............................................................................
+# Trend line comparing overall postings ONS v Lightcast
+#...............................................................................
+
+chart_name <- paste0("ons_compare")
+pal <- gla_pal(palette_type = "highlight",n=c(2,1))
+emp_names <- c("ONS UK","Lightcast UK","Lightcast London")
+pal_named <- setNames(object=pal,nm=emp_names)
+group_order <- c("ONS UK","Lightcast UK","Lightcast London")
+
+ons_compare <- emsi_ons_compare_data %>% 
+  arrange(match(data_source,levels(c("ONS UK","Lightcast UK","Lightcast London")))) %>% 
+  filter(date_day>=as.Date("2012","%Y")) %>% 
+  ggplot(mapping = aes()) +
+  geom_point( #trick to make date appear separately and only once
+    show.legend = FALSE,
+    aes(x = date_day, 
+        y = 0 ,
+        group="1",
+        text = paste0(
+          format(date_day,"%B %Y"))),
+    alpha=0,
+    size=0.001) + 
+  ggla_line(aes(x = date_day, y = three_mon_ave ,
+                group = factor(data_source,levels=(group_order)),
+                text = paste0(data_source,": ",value_form(three_mon_ave,s=3,d=0)),
+                colour = factor(data_source,levels=(group_order))),
+            size = 1 * mm_to_pt)+
+  scale_colour_manual(values = pal_named)+
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off') +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
+  labs(title = paste0("Trend in job vacancies and online job postings"),
+       subtitle = paste0("Data to ",last_month_form,", indexed (2019 = 100)"),
+       caption = "Source: ONS, Lightcast. \nNote: non-seasonally adjusted; ONS note that its vacancy series does not display seasonality. \nMarch 2020 indicated by dotted line.") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+
+
+  ggsave(here::here("OUTPUT","PLOTS",gsub(" ","_",paste0(chart_name,".png"))), device = "png", width = 8, height = 8, units = "in")
+
+# Plotly
+LMU_plotly_settings(ch_name = ons_compare,
+                      title_text = 'paste0("Trend in job vacancies and online job postings")',
+                      subtitle_text = 'paste0("Data to ",last_month_form,", indexed (2019 = 100)")',
+                      hover_mode = "x unified") 
+
+figcap <- paste0("Source: ONS, Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: three-month rolling average vacancies (ONS) and unique online job postings (Lightcast), non-seasonally adjusted; ONS note that its vacancy series do not display seasonality. March 2020 indicated by dotted line.")
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+## Online job postings by occupation {.tabset}
+<br/>
+
+
+### Share of online postings
+
+
+Jobs in some occupations are not advertised online as often as others. This means that certain occupations are over-represented in the count of online job postings.
+
+The share of online postings by major occupational group (SOC) has been relatively steady in recent years. Two groups - Managers & directors and Professionals - have accounted for over half of all London postings between 2018 and 2022 (to date). 
+
+Postings for jobs in other major occupational groups, such as Admin & secretarial and Sales professionals, represent a smaller share of the overall total, while often varying more significantly across the years relative to their size. 
+
+<a href="#top">Back to top</a>
+
+<br/>
+
+``` {r stacked_occ_chart, echo=FALSE,fig.cap = figcap_bar, out.width='100%'}
+
+
+#...............................................................................
+# Create stacked bar chart with share of SOC postings, bar per year
+#...............................................................................
+
+
+chart_name <- paste0("soc_shares")
+
+theme_set(theme_gla(gla_theme = "default"))
+pal <- gla_pal(n=9)
+pal_named <- setNames(object=pal,nm = soc_names_vector)
+
+soc_share_bar_chart <- soc_share_bar_data %>% 
+  filter(year_date>=as.Date("2018-01-01")) %>% 
+  ggplot() +
+  geom_bar(mapping = aes(x=factor(year),
+                         y=postings_share,
+                         fill=factor(soc_name_short,levels=(soc_names_vector)),
+                         text= paste0(soc_name_short, "\n",
+                                      year, ", share: ", perc_form(100*postings_share),"%", "\n")),
+           stat = "identity", 
+           position = "stack",
+           width=0.5) + # bars
+  scale_fill_manual(aesthetics = "fill", values = pal_named) +
+  scale_x_discrete() +
+  scale_y_continuous(expand = c(0, 0), labels = label_percent(suffix = "%")) +
+  guides(fill = guide_legend(nrow = 9)) +
+  ggla_axisat0() +
+  labs(title = paste0("Share of job postings by year"),
+       subtitle = paste0("Average yearly postings by SOC major group"),
+       caption = "Lightcast") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        legend.position="right")
+
+
+ggsave(here::here("OUTPUT","PLOTS",gsub(" ","_",paste0(chart_name,".png"))), device = "png", width = 8, height = 8, units = "in")
+
+#soc_share_bar_chart
+
+LMU_plotly_settings(ch_name = soc_share_bar_chart,
+                    title_text = 'paste0("Share of job postings by year")',
+                    subtitle_text = 'paste0("Average yearly online job postings by SOC major group")',
+                    hover_mode = "closest") %>% 
+  layout(xaxis = list(showgrid=FALSE),
+         yaxis = list(showgrid=TRUE),
+         legend = list(
+           x = 100,
+           y = 0,
+           orientation = "v",
+           xanchor = "left",
+           yanchor = "bottom")
+  ) 
+
+figcap_bar <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),"<br>","<br>", "Note: non-seasonally adjusted. Data for 2022 includes all postings up to ",last_month_form,".")
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+``` {r ess_stats,echo=FALSE}
+
+soc_1_2_ess_share <- perc_form(100* (
+  pull_dtpt(dt=ess_comparison_data,flt='measure=="vacancies_share" & soc_code==1',vr="share")+
+  pull_dtpt(dt=ess_comparison_data,flt='measure=="vacancies_share" & soc_code==2',vr="share")),d=1)
+
+soc_1_2_emsi_share <- perc_form(100* (
+  pull_dtpt(dt=ess_comparison_data,flt='measure=="postings_share" & soc_code==1',vr="share")+
+  pull_dtpt(dt=ess_comparison_data,flt='measure=="postings_share" & soc_code==2',vr="share")),d=1)
+
+```
+
+### Comparison with Employer Skills Survey
+
+The chart below compares the shares of job vacancies or online postings collected through the Employer Skills Survey and Lightcast for 2019. 
+
+The Employer Skills Survey (ESS) is a comprehensive survey of UK employers, which includes information on the total number of vacancies by major (SOC) occupational group. Though the latest data is for 2019, the ESS is a useful points of comparison as it is not skewed towards occupations which are more likely be advertised online.
+
+The share of vacancies for Managers & directors and Professionals were far lower in the ESS at a combined `r soc_1_2_ess_share`% compared to `r soc_1_2_emsi_share`% in the online job postings data. At the same time, the share of vacancies for Caring & leisure, Sales, Operatives and Elementary occupations were significantly higher in the ESS.
+
+<!-- should we exclude unclassified vacancies in the ESS data here?  -->
+
+
+<a href="#top">Back to top</a>
+
+<br/>
+
+``` {r ess_comparison, echo=FALSE,fig.cap = figcap_ess_bar, out.width='100%'}
+
+
+#...............................................................................
+# Create stacked bar chart with share of SOC postings from EMsi and ESS
+#...............................................................................
+
+
+chart_name <- paste0("ess_comparison")
+
+soc_names_vector_adj <- ess_comparison_data  %>% pull(soc_name_short) %>% unique()
+soc_names_vector_adj <- c(soc_names_vector_adj[2:10],soc_names_vector_adj[1]) #move unclassified to last
+
+theme_set(theme_gla(gla_theme = "default"))
+pal <- gla_pal(palette_type = "highlight",n=c(9,1))
+pal_named <- setNames(object=pal,nm = soc_names_vector_adj)
+
+ess_comparison_chart <- ess_comparison_data %>% 
+  filter(soc_code!=0) %>% #remove unclassified
+  ggplot() +
+  geom_bar(mapping = aes(x=factor(data_set),
+                         y=share,
+                         fill=factor(soc_name_short,levels=(soc_names_vector_adj)),
+                         text= paste0(soc_name_short, "\n",
+                                      "Share: ", perc_form(100*share),"%", "\n")),
+           stat = "identity", 
+           position = "stack",
+           width=0.5) + # bars
+  scale_fill_manual(aesthetics = "fill", values = pal_named) +
+  scale_x_discrete() +
+  scale_y_continuous(expand = c(0, 0), labels = label_percent(suffix = "%")) +
+  guides(fill = guide_legend(nrow = 10)) +
+  ggla_axisat0() +
+  labs(title = paste0("Share of vacancies vs. postings"),
+       subtitle = paste0("Share in 2019 by SOC major group"),
+       caption = "Source: ESS and Lightcast.") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        legend.position="right")
+
+
+ggsave(here::here("OUTPUT","PLOTS",gsub(" ","_",paste0(chart_name,".png"))), device = "png", width = 8, height = 8, units = "in")
+
+#soc_share_bar_chart
+
+LMU_plotly_settings(ch_name = ess_comparison_chart,
+                    title_text = 'paste0("Share of job vacancies vs. online postings")',
+                    subtitle_text = 'paste0("Share in 2019 by major SOC group")',
+                    hover_mode = "closest") %>% 
+  layout(xaxis = list(showgrid=FALSE),
+         yaxis = list(showgrid=TRUE),
+         legend = list(
+           x = 100,
+           y = 0,
+           orientation = "v",
+           xanchor = "left",
+           yanchor = "bottom")
+  ) 
+
+figcap_ess_bar <- paste0("Source: ESS, Lightcast ",format(ym(last_month),"%Y"),"<br>","<br>", "Note: share of vacancies in field survey, excluding unclassified occupations, and share of average new monthly online job postings in 2019.")
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+## Index of dissimilarity
+<br/>
+
+A dissimilarity index, as presented in this [IFS report](https://ifs.org.uk/publications/16033), shows how the composition of job postings by occupation has changed over time. The share of job postings is indexed to the average occupational share in the whole of 2019 and the index value ranges between 0 (no change) and 100 (complete change)*. 
+
+The occupational mix saw an abrupt change with the onset of the COVID-19 pandemic. The lockdowns likely lead to a fall in demand, and therefore job postings, for workers in certain industries which meant the mix changed significantly. The occupational mix has returned closer to the long-term trend in recent years, though it remains somewhat different from the 2019 average.
+
+
+<a href="#top">Back to top</a>
+
+<foot>*For more information, see the methodology section.<foot>
+
+``` {r diff_index,echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+#.............................................................................
+# Index of diff
+#.............................................................................
+
+# The data and chart could compare across SOC granularity levels, but uses only 3-digit now.
+pal <- gla_pal(n=1)
+
+chart_name <- paste0("index_diff")
+
+# Produce chart
+index_diff <- postings_diss_index %>% 
+  filter(date_day>="2018-01-01" & soc_level==3) %>% 
+  mutate(abs_diff_2019 = abs_diff_2019*100) %>%
+  ggplot(mapping = aes()) + 
+  ggla_line(aes(x = date_day,
+                y = abs_diff_2019, 
+                group = soc_level,
+                text = paste0(
+                  format(date_day,"%B %Y"),"\n",
+                  "Index: ", value_form(abs_diff_2019 ,s=3,d=1))),
+            size=2* mm_to_pt,
+            color=pal)+    
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off',
+                  ylim=c(0, 30)) +
+  ggla_axisat0() +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year" ) +
+  labs(title = paste0("Difference in occupational mix from 2019"),
+       subtitle = paste0("Based on monthly online job postings in occupation by SOC level"),
+       caption = "Lightcast. Non-seasonally adjusted. March 2020 indicated by dotted line. Based on 3-digit SOC codes.") +
+  theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        plot.margin = unit(c(1,1,1,1), "cm"),
+        panel.spacing = unit(1,"lines"),
+        legend.position = "none")
+
+#salary_facet
+
+ggsave(here::here("OUTPUT","PLOTS",gsub(" ","_",paste0(chart_name,".png"))), device = "png", width = 8, height = 8, units = "in")
+
+# The actual plot
+LMU_plotly_settings(ch_name = index_diff,
+                      title_text = 'paste0("Difference in occupational mix from 2019")',
+                      subtitle_text = 'paste0("Based on monthly online job postings in occupation by SOC level")',
+                      hover_mode = "x") 
+
+figcap_diff <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),"<br>","<br>", "Note: non-seasonally adjusted. March 2020 indicated by dotted line. Based on 3-digit SOC codes.")
+
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+
+## Data and methodology
+<br/>
+
+
+::: {.databox}
+
+### Dissimilarity index
+The index is calculated by comparing the composition of occupations in job postings across 2019 with the composition in a given month. 
+
+The index is calculated as the sum of absolute differences in job postings share by SOC code, or $D_t=100 \cdot \sum_o \left|\frac{p_{o,t}}{p_t} -  \frac{p_{o,2019}}{p_{2019}}\right| \cdot \frac{1}{2}$ where $p$ is the number of job postings for SOC code $o$, either at time $t$ or overall in 2019. 
+<br/>
+
+By multiplying with 100 and dividing by 2, the index is standardised to a range of 0 to 100. If all occupations have the same share of postings at time $t$ as in 2019, the index will be 0. If all occupations with a positive share in 2019 have zero job postings at $t$ while occupations with a zero share in 2019 gain some postings, the index will have a value of 100.
+
+:::
+
+<br/>
+
+::: {.tocify-extend-page data-unique="tocify-extend-page" style="height: 0;"}
+:::

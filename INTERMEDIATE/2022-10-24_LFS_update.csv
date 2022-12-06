@@ -1,0 +1,913 @@
+date_day,date_name,sex_name,geography_name,value_type_name,measures,measures_name,all_persons_aged_16_and_over,total_unemployed_aged_16_and_over,total_in_employment_aged_16_to_64,total_economically_inactive_aged_16_to_64
+2010-01-01,Nov 2009-Jan 2010,Total,London,Level,20100,number of people,6347812,369849,3697345,1419712
+2010-01-01,Nov 2009-Jan 2010,Total,London,Change on quarter,20100,number of people,22597,-19282,4891,33324
+2010-01-01,Nov 2009-Jan 2010,Total,London,Change on year,20100,number of people,95674,49753,-91025,129120
+2010-01-01,Nov 2009-Jan 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.9,67.4,25.9
+2010-01-01,Nov 2009-Jan 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,-0.2,0.5
+2010-01-01,Nov 2009-Jan 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.3,-2.8,2
+2010-02-01,Dec 2009-Feb 2010,Total,London,Level,20100,number of people,6355326,376003,3702267,1416106
+2010-02-01,Dec 2009-Feb 2010,Total,London,Change on quarter,20100,number of people,22587,-19230,11244,27543
+2010-02-01,Dec 2009-Feb 2010,Total,London,Change on year,20100,number of people,94757,37604,-44692,93115
+2010-02-01,Dec 2009-Feb 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.1,67.4,25.8
+2010-02-01,Dec 2009-Feb 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0,0.4
+2010-02-01,Dec 2009-Feb 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.9,-1.9,1.3
+2010-03-01,Jan 2010-Mar 2010,Total,London,Level,20100,number of people,6362842,381891,3697842,1421118
+2010-03-01,Jan 2010-Mar 2010,Total,London,Change on quarter,20100,number of people,22542,-4736,-6365,30624
+2010-03-01,Jan 2010-Mar 2010,Total,London,Change on year,20100,number of people,93986,37544,-32021,79201
+2010-03-01,Jan 2010-Mar 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.2,67.3,25.9
+2010-03-01,Jan 2010-Mar 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.4,0.5
+2010-03-01,Jan 2010-Mar 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.9,-1.6,1.1
+2010-04-01,Feb 2010-Apr 2010,Total,London,Level,20100,number of people,6370499,388583,3708108,1411116
+2010-04-01,Feb 2010-Apr 2010,Total,London,Change on quarter,20100,number of people,22687,18734,10763,-8596
+2010-04-01,Feb 2010-Apr 2010,Total,London,Change on year,20100,number of people,93157,36544,-1718,49109
+2010-04-01,Feb 2010-Apr 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.3,67.4,25.6
+2010-04-01,Feb 2010-Apr 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.1,-0.3
+2010-04-01,Feb 2010-Apr 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.8,-1.1,0.5
+2010-05-01,Mar 2010-May 2010,Total,London,Level,20100,number of people,6378047,400350,3725646,1388415
+2010-05-01,Mar 2010-May 2010,Total,London,Change on quarter,20100,number of people,22721,24347,23379,-27691
+2010-05-01,Mar 2010-May 2010,Total,London,Change on year,20100,number of people,92207,35142,36193,12164
+2010-05-01,Mar 2010-May 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.5,67.6,25.2
+2010-05-01,Mar 2010-May 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.5,0.2,-0.6
+2010-05-01,Mar 2010-May 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.7,-0.4,-0.2
+2010-06-01,Apr 2010-Jun 2010,Total,London,Level,20100,number of people,6385429,399232,3733800,1386880
+2010-06-01,Apr 2010-Jun 2010,Total,London,Change on quarter,20100,number of people,22587,17341,35958,-34238
+2010-06-01,Apr 2010-Jun 2010,Total,London,Change on year,20100,number of people,91301,25144,61270,-4035
+2010-06-01,Apr 2010-Jun 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.5,67.7,25.1
+2010-06-01,Apr 2010-Jun 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,0.4,-0.7
+2010-06-01,Apr 2010-Jun 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,0.1,-0.5
+2010-07-01,May 2010-Jul 2010,Total,London,Level,20100,number of people,6392872,396331,3746912,1383190
+2010-07-01,May 2010-Jul 2010,Total,London,Change on quarter,20100,number of people,22373,7748,38804,-27926
+2010-07-01,May 2010-Jul 2010,Total,London,Change on year,20100,number of people,90314,8872,93671,-22305
+2010-07-01,May 2010-Jul 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.4,67.8,25
+2010-07-01,May 2010-Jul 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.5,-0.6
+2010-07-01,May 2010-Jul 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.7,-0.8
+2010-08-01,Jun 2010-Aug 2010,Total,London,Level,20100,number of people,6402922,391001,3755291,1389894
+2010-08-01,Jun 2010-Aug 2010,Total,London,Change on quarter,20100,number of people,24875,-9349,29645,1479
+2010-08-01,Jun 2010-Aug 2010,Total,London,Change on year,20100,number of people,93032,16259,65128,2620
+2010-08-01,Jun 2010-Aug 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.3,67.9,25.1
+2010-08-01,Jun 2010-Aug 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.3,-0.1
+2010-08-01,Jun 2010-Aug 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,0.2,-0.3
+2010-09-01,Jul 2010-Sep 2010,Total,London,Level,20100,number of people,6412968,389424,3785815,1370129
+2010-09-01,Jul 2010-Sep 2010,Total,London,Change on quarter,20100,number of people,27539,-9808,52015,-16751
+2010-09-01,Jul 2010-Sep 2010,Total,London,Change on year,20100,number of people,95250,7450,103647,-25966
+2010-09-01,Jul 2010-Sep 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.2,68.3,24.7
+2010-09-01,Jul 2010-Sep 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.6,-0.4
+2010-09-01,Jul 2010-Sep 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.8,-0.9
+2010-10-01,Aug 2010-Oct 2010,Total,London,Level,20100,number of people,6422764,390639,3773240,1389868
+2010-10-01,Aug 2010-Oct 2010,Total,London,Change on quarter,20100,number of people,29892,-5692,26328,6678
+2010-10-01,Aug 2010-Oct 2010,Total,London,Change on year,20100,number of people,97549,1508,80786,3480
+2010-10-01,Aug 2010-Oct 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.2,68,25
+2010-10-01,Aug 2010-Oct 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,0.1,0
+2010-10-01,Aug 2010-Oct 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.4,-0.3
+2010-11-01,Sep 2010-Nov 2010,Total,London,Level,20100,number of people,6432710,399098,3766595,1399224
+2010-11-01,Sep 2010-Nov 2010,Total,London,Change on quarter,20100,number of people,29788,8097,11304,9330
+2010-11-01,Sep 2010-Nov 2010,Total,London,Change on year,20100,number of people,99971,3865,75572,10661
+2010-11-01,Sep 2010-Nov 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.4,67.8,25.2
+2010-11-01,Sep 2010-Nov 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,-0.1,0
+2010-11-01,Sep 2010-Nov 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.3,-0.2
+2010-12-01,Oct 2010-Dec 2010,Total,London,Level,20100,number of people,6442639,392239,3790713,1390451
+2010-12-01,Oct 2010-Dec 2010,Total,London,Change on quarter,20100,number of people,29671,2815,4898,20322
+2010-12-01,Oct 2010-Dec 2010,Total,London,Change on year,20100,number of people,102339,5612,86506,-43
+2010-12-01,Oct 2010-Dec 2010,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.2,68.1,25
+2010-12-01,Oct 2010-Dec 2010,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,-0.2,0.2
+2010-12-01,Oct 2010-Dec 2010,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.4,-0.4
+2011-01-01,Nov 2010-Jan 2011,Total,London,Level,20100,number of people,6452565,406968,3795128,1379965
+2011-01-01,Nov 2010-Jan 2011,Total,London,Change on quarter,20100,number of people,29801,16329,21888,-9903
+2011-01-01,Nov 2010-Jan 2011,Total,London,Change on year,20100,number of people,104753,37119,97783,-39747
+2011-01-01,Nov 2010-Jan 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.5,68,24.7
+2011-01-01,Nov 2010-Jan 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,0.1,-0.3
+2011-01-01,Nov 2010-Jan 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.6,0.6,-1.1
+2011-02-01,Dec 2010-Feb 2011,Total,London,Level,20100,number of people,6462514,401220,3802558,1385901
+2011-02-01,Dec 2010-Feb 2011,Total,London,Change on quarter,20100,number of people,29804,2122,35963,-13323
+2011-02-01,Dec 2010-Feb 2011,Total,London,Change on year,20100,number of people,107188,25217,100291,-30205
+2011-02-01,Dec 2010-Feb 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.4,68.1,24.8
+2011-02-01,Dec 2010-Feb 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.3,-0.4
+2011-02-01,Dec 2010-Feb 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,0.6,-1
+2011-03-01,Jan 2011-Mar 2011,Total,London,Level,20100,number of people,6472484,397455,3814540,1385750
+2011-03-01,Jan 2011-Mar 2011,Total,London,Change on quarter,20100,number of people,29845,5216,23827,-4701
+2011-03-01,Jan 2011-Mar 2011,Total,London,Change on year,20100,number of people,109642,15564,116698,-35368
+2011-03-01,Jan 2011-Mar 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.2,68.2,24.8
+2011-03-01,Jan 2011-Mar 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.1,-0.2
+2011-03-01,Jan 2011-Mar 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.9,-1.1
+2011-04-01,Feb 2011-Apr 2011,Total,London,Level,20100,number of people,6482382,402787,3807484,1396739
+2011-04-01,Feb 2011-Apr 2011,Total,London,Change on quarter,20100,number of people,29817,-4181,12356,16774
+2011-04-01,Feb 2011-Apr 2011,Total,London,Change on year,20100,number of people,111883,14204,99376,-14377
+2011-04-01,Feb 2011-Apr 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.4,67.9,24.9
+2011-04-01,Feb 2011-Apr 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.1,0.2
+2011-04-01,Feb 2011-Apr 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.6,-0.7
+2011-05-01,Mar 2011-May 2011,Total,London,Level,20100,number of people,6492403,421044,3799383,1394905
+2011-05-01,Mar 2011-May 2011,Total,London,Change on quarter,20100,number of people,29889,19824,-3175,9004
+2011-05-01,Mar 2011-May 2011,Total,London,Change on year,20100,number of people,114356,20694,73737,6490
+2011-05-01,Mar 2011-May 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.8,67.7,24.9
+2011-05-01,Mar 2011-May 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.4,0
+2011-05-01,Mar 2011-May 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,0.1,-0.3
+2011-06-01,Apr 2011-Jun 2011,Total,London,Level,20100,number of people,6502239,428762,3794762,1399749
+2011-06-01,Apr 2011-Jun 2011,Total,London,Change on quarter,20100,number of people,29755,31307,-19778,13999
+2011-06-01,Apr 2011-Jun 2011,Total,London,Change on year,20100,number of people,116810,29530,60962,12869
+2011-06-01,Apr 2011-Jun 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.9,67.5,24.9
+2011-06-01,Apr 2011-Jun 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.7,-0.7,0.1
+2011-06-01,Apr 2011-Jun 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.5,-0.2,-0.2
+2011-07-01,May 2011-Jul 2011,Total,London,Level,20100,number of people,6512162,436311,3786193,1410479
+2011-07-01,May 2011-Jul 2011,Total,London,Change on quarter,20100,number of people,29780,33524,-21291,13740
+2011-07-01,May 2011-Jul 2011,Total,London,Change on year,20100,number of people,119290,39980,39281,27289
+2011-07-01,May 2011-Jul 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.1,67.2,25.1
+2011-07-01,May 2011-Jul 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.8,-0.7,0.1
+2011-07-01,May 2011-Jul 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.7,-0.6,0
+2011-08-01,Jun 2011-Aug 2011,Total,London,Level,20100,number of people,6517803,447319,3775168,1419910
+2011-08-01,Jun 2011-Aug 2011,Total,London,Change on quarter,20100,number of people,25400,26275,-24215,25005
+2011-08-01,Jun 2011-Aug 2011,Total,London,Change on year,20100,number of people,114881,56318,19877,30016
+2011-08-01,Jun 2011-Aug 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.4,67,25.2
+2011-08-01,Jun 2011-Aug 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.6,-0.7,0.4
+2011-08-01,Jun 2011-Aug 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.2,-0.9,0.1
+2011-09-01,Jul 2011-Sep 2011,Total,London,Level,20100,number of people,6523203,435675,3773854,1438249
+2011-09-01,Jul 2011-Sep 2011,Total,London,Change on quarter,20100,number of people,20964,6913,-20908,38500
+2011-09-01,Jul 2011-Sep 2011,Total,London,Change on year,20100,number of people,110235,46251,-11961,68120
+2011-09-01,Jul 2011-Sep 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.2,66.9,25.5
+2011-09-01,Jul 2011-Sep 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,-0.6,0.6
+2011-09-01,Jul 2011-Sep 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1,-1.4,0.8
+2011-10-01,Aug 2011-Oct 2011,Total,London,Level,20100,number of people,6528650,446099,3793579,1415300
+2011-10-01,Aug 2011-Oct 2011,Total,London,Change on quarter,20100,number of people,16488,9788,7386,4821
+2011-10-01,Aug 2011-Oct 2011,Total,London,Change on year,20100,number of people,105886,55460,20339,25432
+2011-10-01,Aug 2011-Oct 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.3,67.3,25.1
+2011-10-01,Aug 2011-Oct 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,0,0
+2011-10-01,Aug 2011-Oct 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.1,-0.7,0.1
+2011-11-01,Sep 2011-Nov 2011,Total,London,Level,20100,number of people,6534429,448054,3785706,1418439
+2011-11-01,Sep 2011-Nov 2011,Total,London,Change on quarter,20100,number of people,16626,735,10538,-1471
+2011-11-01,Sep 2011-Nov 2011,Total,London,Change on year,20100,number of people,101719,48956,19111,19215
+2011-11-01,Sep 2011-Nov 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.4,67.1,25.1
+2011-11-01,Sep 2011-Nov 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.1,-0.1
+2011-11-01,Sep 2011-Nov 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1,-0.7,0
+2011-12-01,Oct 2011-Dec 2011,Total,London,Level,20100,number of people,6539658,447333,3767773,1435217
+2011-12-01,Oct 2011-Dec 2011,Total,London,Change on quarter,20100,number of people,16455,11658,-6081,-3032
+2011-12-01,Oct 2011-Dec 2011,Total,London,Change on year,20100,number of people,97019,55094,-22940,44766
+2011-12-01,Oct 2011-Dec 2011,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.4,66.7,25.4
+2011-12-01,Oct 2011-Dec 2011,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,-0.2,-0.1
+2011-12-01,Oct 2011-Dec 2011,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.2,-1.4,0.4
+2012-01-01,Nov 2011-Jan 2012,Total,London,Level,20100,number of people,6545276,444360,3771489,1435412
+2012-01-01,Nov 2011-Jan 2012,Total,London,Change on quarter,20100,number of people,16626,-1739,-22090,20112
+2012-01-01,Nov 2011-Jan 2012,Total,London,Change on year,20100,number of people,92711,37392,-23639,55447
+2012-01-01,Nov 2011-Jan 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.3,66.8,25.4
+2012-01-01,Nov 2011-Jan 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,-0.5,0.3
+2012-01-01,Nov 2011-Jan 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.8,-1.3,0.7
+2012-02-01,Dec 2011-Feb 2012,Total,London,Level,20100,number of people,6550734,439715,3777551,1434491
+2012-02-01,Dec 2011-Feb 2012,Total,London,Change on quarter,20100,number of people,16305,-8339,-8155,16052
+2012-02-01,Dec 2011-Feb 2012,Total,London,Change on year,20100,number of people,88220,38495,-25007,48590
+2012-02-01,Dec 2011-Feb 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10.2,66.8,25.4
+2012-02-01,Dec 2011-Feb 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,-0.3,0.2
+2012-02-01,Dec 2011-Feb 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.9,-1.3,0.6
+2012-03-01,Jan 2012-Mar 2012,Total,London,Level,20100,number of people,6556254,429540,3778036,1448115
+2012-03-01,Jan 2012-Mar 2012,Total,London,Change on quarter,20100,number of people,16596,-17793,10263,12898
+2012-03-01,Jan 2012-Mar 2012,Total,London,Change on year,20100,number of people,83770,32085,-36504,62365
+2012-03-01,Jan 2012-Mar 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,10,66.8,25.6
+2012-03-01,Jan 2012-Mar 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.1,0.2
+2012-03-01,Jan 2012-Mar 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.7,-1.4,0.8
+2012-04-01,Feb 2012-Apr 2012,Total,London,Level,20100,number of people,6561964,420323,3801220,1435091
+2012-04-01,Feb 2012-Apr 2012,Total,London,Change on quarter,20100,number of people,16688,-24037,29731,-321
+2012-04-01,Feb 2012-Apr 2012,Total,London,Change on year,20100,number of people,79582,17536,-6264,38352
+2012-04-01,Feb 2012-Apr 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.7,67.2,25.4
+2012-04-01,Feb 2012-Apr 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,0.4,-0.1
+2012-04-01,Feb 2012-Apr 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.8,0.4
+2012-05-01,Mar 2012-May 2012,Total,London,Level,20100,number of people,6567450,387907,3827568,1442142
+2012-05-01,Mar 2012-May 2012,Total,London,Change on quarter,20100,number of people,16716,-51808,50017,7651
+2012-05-01,Mar 2012-May 2012,Total,London,Change on year,20100,number of people,75047,-33137,28185,47237
+2012-05-01,Mar 2012-May 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9,67.6,25.5
+2012-05-01,Mar 2012-May 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.2,0.8,0.1
+2012-05-01,Mar 2012-May 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,-0.1,0.6
+2012-06-01,Apr 2012-Jun 2012,Total,London,Level,20100,number of people,6572937,385553,3868358,1410287
+2012-06-01,Apr 2012-Jun 2012,Total,London,Change on quarter,20100,number of people,16683,-43987,90322,-37828
+2012-06-01,Apr 2012-Jun 2012,Total,London,Change on year,20100,number of people,70698,-43209,73596,10538
+2012-06-01,Apr 2012-Jun 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.9,68.3,24.9
+2012-06-01,Apr 2012-Jun 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.1,1.5,-0.7
+2012-06-01,Apr 2012-Jun 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.1,0.8,0
+2012-07-01,May 2012-Jul 2012,Total,London,Level,20100,number of people,6578553,397996,3888416,1386041
+2012-07-01,May 2012-Jul 2012,Total,London,Change on quarter,20100,number of people,16589,-22327,87196,-49050
+2012-07-01,May 2012-Jul 2012,Total,London,Change on year,20100,number of people,66391,-38315,102223,-24438
+2012-07-01,May 2012-Jul 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.1,68.6,24.4
+2012-07-01,May 2012-Jul 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,1.4,-0.9
+2012-07-01,May 2012-Jul 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.1,1.3,-0.6
+2012-08-01,Jun 2012-Aug 2012,Total,London,Level,20100,number of people,6584718,405234,3917815,1359608
+2012-08-01,Jun 2012-Aug 2012,Total,London,Change on quarter,20100,number of people,17268,17327,90247,-82534
+2012-08-01,Jun 2012-Aug 2012,Total,London,Change on year,20100,number of people,66915,-42085,142647,-60302
+2012-08-01,Jun 2012-Aug 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.2,69,24
+2012-08-01,Jun 2012-Aug 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,1.5,-1.5
+2012-08-01,Jun 2012-Aug 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.3,2,-1.2
+2012-09-01,Jul 2012-Sep 2012,Total,London,Level,20100,number of people,6590785,400892,3913621,1373356
+2012-09-01,Jul 2012-Sep 2012,Total,London,Change on quarter,20100,number of people,17848,15339,45263,-36931
+2012-09-01,Jul 2012-Sep 2012,Total,London,Change on year,20100,number of people,67582,-34783,139767,-64893
+2012-09-01,Jul 2012-Sep 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.1,68.9,24.2
+2012-09-01,Jul 2012-Sep 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,0.7,-0.7
+2012-09-01,Jul 2012-Sep 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.1,2,-1.3
+2012-10-01,Aug 2012-Oct 2012,Total,London,Level,20100,number of people,6597066,408670,3895352,1391897
+2012-10-01,Aug 2012-Oct 2012,Total,London,Change on quarter,20100,number of people,18513,10674,6936,5856
+2012-10-01,Aug 2012-Oct 2012,Total,London,Change on year,20100,number of people,68416,-37429,101773,-23403
+2012-10-01,Aug 2012-Oct 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.3,68.5,24.5
+2012-10-01,Aug 2012-Oct 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,0,0
+2012-10-01,Aug 2012-Oct 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1,1.3,-0.6
+2012-11-01,Sep 2012-Nov 2012,Total,London,Level,20100,number of people,6603466,386873,3930327,1379311
+2012-11-01,Sep 2012-Nov 2012,Total,London,Change on quarter,20100,number of people,18748,-18361,12512,19703
+2012-11-01,Sep 2012-Nov 2012,Total,London,Change on year,20100,number of people,69037,-61181,144621,-39128
+2012-11-01,Sep 2012-Nov 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.7,69.1,24.3
+2012-11-01,Sep 2012-Nov 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.1,0.3
+2012-11-01,Sep 2012-Nov 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.6,2,-0.9
+2012-12-01,Oct 2012-Dec 2012,Total,London,Level,20100,number of people,6609804,391461,3965583,1336334
+2012-12-01,Oct 2012-Dec 2012,Total,London,Change on quarter,20100,number of people,19019,-9431,51962,-37022
+2012-12-01,Oct 2012-Dec 2012,Total,London,Change on year,20100,number of people,70146,-55872,197810,-98883
+2012-12-01,Oct 2012-Dec 2012,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.8,69.7,23.5
+2012-12-01,Oct 2012-Dec 2012,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.8,-0.7
+2012-12-01,Oct 2012-Dec 2012,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.6,2.9,-1.9
+2013-01-01,Nov 2012-Jan 2013,Total,London,Level,20100,number of people,6615945,387404,3962976,1345519
+2013-01-01,Nov 2012-Jan 2013,Total,London,Change on quarter,20100,number of people,18879,-21266,67624,-46378
+2013-01-01,Nov 2012-Jan 2013,Total,London,Change on year,20100,number of people,70669,-56956,191487,-89893
+2013-01-01,Nov 2012-Jan 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.7,69.6,23.6
+2013-01-01,Nov 2012-Jan 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,1,-0.9
+2013-01-01,Nov 2012-Jan 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.7,2.8,-1.8
+2013-02-01,Dec 2012-Feb 2013,Total,London,Level,20100,number of people,6622190,409578,3944049,1345768
+2013-02-01,Dec 2012-Feb 2013,Total,London,Change on quarter,20100,number of people,18724,22705,13722,-33543
+2013-02-01,Dec 2012-Feb 2013,Total,London,Change on year,20100,number of people,71456,-30137,166498,-88723
+2013-02-01,Dec 2012-Feb 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9.2,69.2,23.6
+2013-02-01,Dec 2012-Feb 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,0.1,-0.6
+2013-02-01,Dec 2012-Feb 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1,2.4,-1.8
+2013-03-01,Jan 2013-Mar 2013,Total,London,Level,20100,number of people,6628451,391218,3976175,1338089
+2013-03-01,Jan 2013-Mar 2013,Total,London,Change on quarter,20100,number of people,18647,-243,10592,1755
+2013-03-01,Jan 2013-Mar 2013,Total,London,Change on year,20100,number of people,72197,-38322,198139,-110026
+2013-03-01,Jan 2013-Mar 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.7,69.7,23.5
+2013-03-01,Jan 2013-Mar 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0,0
+2013-03-01,Jan 2013-Mar 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.3,2.9,-2.1
+2013-04-01,Feb 2013-Apr 2013,Total,London,Level,20100,number of people,6634921,388571,3965159,1354000
+2013-04-01,Feb 2013-Apr 2013,Total,London,Change on quarter,20100,number of people,18976,1167,2183,8481
+2013-04-01,Feb 2013-Apr 2013,Total,London,Change on year,20100,number of people,72957,-31752,163939,-81091
+2013-04-01,Feb 2013-Apr 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.7,69.4,23.7
+2013-04-01,Feb 2013-Apr 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,-0.1,0.1
+2013-04-01,Feb 2013-Apr 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1,2.3,-1.6
+2013-05-01,Mar 2013-May 2013,Total,London,Level,20100,number of people,6640904,383970,3955680,1370285
+2013-05-01,Mar 2013-May 2013,Total,London,Change on quarter,20100,number of people,18714,-25608,11631,24517
+2013-05-01,Mar 2013-May 2013,Total,London,Change on year,20100,number of people,73454,-3937,128112,-71857
+2013-05-01,Mar 2013-May 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.6,69.2,24
+2013-05-01,Mar 2013-May 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0,0.4
+2013-05-01,Mar 2013-May 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,1.6,-1.5
+2013-06-01,Apr 2013-Jun 2013,Total,London,Level,20100,number of people,6647368,390262,3961348,1364091
+2013-06-01,Apr 2013-Jun 2013,Total,London,Change on quarter,20100,number of people,18917,-956,-14827,26002
+2013-06-01,Apr 2013-Jun 2013,Total,London,Change on year,20100,number of people,74431,4709,92990,-46196
+2013-06-01,Apr 2013-Jun 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.8,69.3,23.9
+2013-06-01,Apr 2013-Jun 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,-0.4,0.4
+2013-06-01,Apr 2013-Jun 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,1,-1
+2013-07-01,May 2013-Jul 2013,Total,London,Level,20100,number of people,6653714,376491,3999155,1348721
+2013-07-01,May 2013-Jul 2013,Total,London,Change on quarter,20100,number of people,18793,-12080,33996,-5279
+2013-07-01,May 2013-Jul 2013,Total,London,Change on year,20100,number of people,75161,-21505,110739,-37320
+2013-07-01,May 2013-Jul 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.4,69.9,23.6
+2013-07-01,May 2013-Jul 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.4,-0.1
+2013-07-01,May 2013-Jul 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,1.3,-0.9
+2013-08-01,Jun 2013-Aug 2013,Total,London,Level,20100,number of people,6660925,394049,4013895,1328153
+2013-08-01,Jun 2013-Aug 2013,Total,London,Change on quarter,20100,number of people,20021,10079,58215,-42132
+2013-08-01,Jun 2013-Aug 2013,Total,London,Change on year,20100,number of people,76207,-11185,96080,-31455
+2013-08-01,Jun 2013-Aug 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.8,70.1,23.2
+2013-08-01,Jun 2013-Aug 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.8,-0.8
+2013-08-01,Jun 2013-Aug 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,1,-0.8
+2013-09-01,Jul 2013-Sep 2013,Total,London,Level,20100,number of people,6668178,405729,4003605,1331250
+2013-09-01,Jul 2013-Sep 2013,Total,London,Change on quarter,20100,number of people,20810,15467,42257,-32841
+2013-09-01,Jul 2013-Sep 2013,Total,London,Change on year,20100,number of people,77393,4837,89984,-42106
+2013-09-01,Jul 2013-Sep 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,9,69.8,23.2
+2013-09-01,Jul 2013-Sep 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,0.6,-0.6
+2013-09-01,Jul 2013-Sep 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.9,-1
+2013-10-01,Aug 2013-Oct 2013,Total,London,Level,20100,number of people,6675756,398978,4037400,1316184
+2013-10-01,Aug 2013-Oct 2013,Total,London,Change on quarter,20100,number of people,22042,22487,38245,-32537
+2013-10-01,Aug 2013-Oct 2013,Total,London,Change on year,20100,number of people,78690,-9692,142048,-75713
+2013-10-01,Aug 2013-Oct 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.8,70.3,22.9
+2013-10-01,Aug 2013-Oct 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,0.5,-0.6
+2013-10-01,Aug 2013-Oct 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,1.8,-1.6
+2013-11-01,Sep 2013-Nov 2013,Total,London,Level,20100,number of people,6682816,381918,4065086,1305584
+2013-11-01,Sep 2013-Nov 2013,Total,London,Change on quarter,20100,number of people,21891,-12131,51191,-22569
+2013-11-01,Sep 2013-Nov 2013,Total,London,Change on year,20100,number of people,79350,-4955,134759,-73727
+2013-11-01,Sep 2013-Nov 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.4,70.8,22.7
+2013-11-01,Sep 2013-Nov 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.7,-0.5
+2013-11-01,Sep 2013-Nov 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,1.7,-1.5
+2013-12-01,Oct 2013-Dec 2013,Total,London,Level,20100,number of people,6690387,374374,4067842,1311364
+2013-12-01,Oct 2013-Dec 2013,Total,London,Change on quarter,20100,number of people,22209,-31355,64237,-19886
+2013-12-01,Oct 2013-Dec 2013,Total,London,Change on year,20100,number of people,80583,-17087,102259,-24970
+2013-12-01,Oct 2013-Dec 2013,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.2,70.7,22.8
+2013-12-01,Oct 2013-Dec 2013,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.9,-0.4
+2013-12-01,Oct 2013-Dec 2013,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,1.1,-0.7
+2014-01-01,Nov 2013-Jan 2014,Total,London,Level,20100,number of people,6697861,378675,4077323,1302676
+2014-01-01,Nov 2013-Jan 2014,Total,London,Change on quarter,20100,number of people,22105,-20303,39923,-13508
+2014-01-01,Nov 2013-Jan 2014,Total,London,Change on year,20100,number of people,81916,-8729,114347,-42843
+2014-01-01,Nov 2013-Jan 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8.3,70.8,22.6
+2014-01-01,Nov 2013-Jan 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.5,-0.3
+2014-01-01,Nov 2013-Jan 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,1.3,-1
+2014-02-01,Dec 2013-Feb 2014,Total,London,Level,20100,number of people,6705233,363341,4090509,1312762
+2014-02-01,Dec 2013-Feb 2014,Total,London,Change on quarter,20100,number of people,22417,-18577,25423,7178
+2014-02-01,Dec 2013-Feb 2014,Total,London,Change on year,20100,number of people,83043,-46237,146460,-33006
+2014-02-01,Dec 2013-Feb 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,8,71,22.8
+2014-02-01,Dec 2013-Feb 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.2,0.1
+2014-02-01,Dec 2013-Feb 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.2,1.8,-0.8
+2014-03-01,Jan 2014-Mar 2014,Total,London,Level,20100,number of people,6712705,354958,4108653,1309595
+2014-03-01,Jan 2014-Mar 2014,Total,London,Change on quarter,20100,number of people,22318,-19416,40811,-1769
+2014-03-01,Jan 2014-Mar 2014,Total,London,Change on year,20100,number of people,84254,-36260,132478,-28494
+2014-03-01,Jan 2014-Mar 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7.8,71.2,22.7
+2014-03-01,Jan 2014-Mar 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.5,-0.1
+2014-03-01,Jan 2014-Mar 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1,1.5,-0.7
+2014-04-01,Feb 2014-Apr 2014,Total,London,Level,20100,number of people,6720149,346051,4139021,1291002
+2014-04-01,Feb 2014-Apr 2014,Total,London,Change on quarter,20100,number of people,22288,-32624,61698,-11674
+2014-04-01,Feb 2014-Apr 2014,Total,London,Change on year,20100,number of people,85228,-42520,173862,-62998
+2014-04-01,Feb 2014-Apr 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7.5,71.7,22.4
+2014-04-01,Feb 2014-Apr 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.9,-0.3
+2014-04-01,Feb 2014-Apr 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.2,2.3,-1.4
+2014-05-01,Mar 2014-May 2014,Total,London,Level,20100,number of people,6727431,333191,4151313,1294198
+2014-05-01,Mar 2014-May 2014,Total,London,Change on quarter,20100,number of people,22198,-30150,60804,-18564
+2014-05-01,Mar 2014-May 2014,Total,London,Change on year,20100,number of people,86527,-50779,195633,-76087
+2014-05-01,Mar 2014-May 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7.2,71.8,22.4
+2014-05-01,Mar 2014-May 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.8,-0.4
+2014-05-01,Mar 2014-May 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.4,2.6,-1.6
+2014-06-01,Apr 2014-Jun 2014,Total,London,Level,20100,number of people,6734888,322984,4163220,1298960
+2014-06-01,Apr 2014-Jun 2014,Total,London,Change on quarter,20100,number of people,22183,-31974,54567,-10635
+2014-06-01,Apr 2014-Jun 2014,Total,London,Change on year,20100,number of people,87520,-67278,201872,-65131
+2014-06-01,Apr 2014-Jun 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7,72,22.5
+2014-06-01,Apr 2014-Jun 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.7,-0.2
+2014-06-01,Apr 2014-Jun 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.8,2.7,-1.4
+2014-07-01,May 2014-Jul 2014,Total,London,Level,20100,number of people,6742130,309081,4171857,1312732
+2014-07-01,May 2014-Jul 2014,Total,London,Change on quarter,20100,number of people,21981,-36970,32836,21730
+2014-07-01,May 2014-Jul 2014,Total,London,Change on year,20100,number of people,88416,-67410,172702,-35989
+2014-07-01,May 2014-Jul 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.7,72.1,22.7
+2014-07-01,May 2014-Jul 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.4,0.3
+2014-07-01,May 2014-Jul 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.7,2.2,-0.9
+2014-08-01,Jun 2014-Aug 2014,Total,London,Level,20100,number of people,6750254,298600,4191907,1314507
+2014-08-01,Jun 2014-Aug 2014,Total,London,Change on quarter,20100,number of people,22823,-34591,40594,20309
+2014-08-01,Jun 2014-Aug 2014,Total,London,Change on year,20100,number of people,89329,-95449,178012,-13646
+2014-08-01,Jun 2014-Aug 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.5,72.3,22.7
+2014-08-01,Jun 2014-Aug 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.5,0.3
+2014-08-01,Jun 2014-Aug 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.3,2.3,-0.5
+2014-09-01,Jul 2014-Sep 2014,Total,London,Level,20100,number of people,6758268,290322,4198609,1322130
+2014-09-01,Jul 2014-Sep 2014,Total,London,Change on quarter,20100,number of people,23380,-32662,35389,23170
+2014-09-01,Jul 2014-Sep 2014,Total,London,Change on year,20100,number of people,90090,-115407,195004,-9120
+2014-09-01,Jul 2014-Sep 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.3,72.4,22.8
+2014-09-01,Jul 2014-Sep 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.4,0.3
+2014-09-01,Jul 2014-Sep 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.7,2.5,-0.4
+2014-10-01,Aug 2014-Oct 2014,Total,London,Level,20100,number of people,6766031,301319,4176811,1344162
+2014-10-01,Aug 2014-Oct 2014,Total,London,Change on quarter,20100,number of people,23901,-7762,4954,31430
+2014-10-01,Aug 2014-Oct 2014,Total,London,Change on year,20100,number of people,90275,-97659,139411,27978
+2014-10-01,Aug 2014-Oct 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.6,71.9,23.1
+2014-10-01,Aug 2014-Oct 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,-0.2,0.5
+2014-10-01,Aug 2014-Oct 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.3,1.6,0.2
+2014-11-01,Sep 2014-Nov 2014,Total,London,Level,20100,number of people,6774139,303182,4165161,1356517
+2014-11-01,Sep 2014-Nov 2014,Total,London,Change on quarter,20100,number of people,23885,4582,-26746,42010
+2014-11-01,Sep 2014-Nov 2014,Total,London,Change on year,20100,number of people,91323,-78736,100075,50933
+2014-11-01,Sep 2014-Nov 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.6,71.6,23.3
+2014-11-01,Sep 2014-Nov 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,-0.7,0.6
+2014-11-01,Sep 2014-Nov 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.8,0.9,0.6
+2014-12-01,Oct 2014-Dec 2014,Total,London,Level,20100,number of people,6782008,301070,4184305,1340492
+2014-12-01,Oct 2014-Dec 2014,Total,London,Change on quarter,20100,number of people,23740,10748,-14304,18362
+2014-12-01,Oct 2014-Dec 2014,Total,London,Change on year,20100,number of people,91621,-73304,116463,29128
+2014-12-01,Oct 2014-Dec 2014,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.5,71.9,23
+2014-12-01,Oct 2014-Dec 2014,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,-0.5,0.2
+2014-12-01,Oct 2014-Dec 2014,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.7,1.1,0.2
+2015-01-01,Nov 2014-Jan 2015,Total,London,Level,20100,number of people,6789972,284674,4218392,1326782
+2015-01-01,Nov 2014-Jan 2015,Total,London,Change on quarter,20100,number of people,23941,-16645,41581,-17380
+2015-01-01,Nov 2014-Jan 2015,Total,London,Change on year,20100,number of people,92111,-94001,141069,24106
+2015-01-01,Nov 2014-Jan 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.1,72.4,22.8
+2015-01-01,Nov 2014-Jan 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.5,-0.4
+2015-01-01,Nov 2014-Jan 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.2,1.5,0.1
+2015-02-01,Dec 2014-Feb 2015,Total,London,Level,20100,number of people,6797721,287620,4216704,1333186
+2015-02-01,Dec 2014-Feb 2015,Total,London,Change on quarter,20100,number of people,23582,-15562,51543,-23331
+2015-02-01,Dec 2014-Feb 2015,Total,London,Change on year,20100,number of people,92488,-75721,126195,20424
+2015-02-01,Dec 2014-Feb 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.2,72.3,22.8
+2015-02-01,Dec 2014-Feb 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.6,-0.5
+2015-02-01,Dec 2014-Feb 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.8,1.3,0.1
+2015-03-01,Jan 2015-Mar 2015,Total,London,Level,20100,number of people,6805742,284666,4215822,1343767
+2015-03-01,Jan 2015-Mar 2015,Total,London,Change on quarter,20100,number of people,23734,-16404,31517,3275
+2015-03-01,Jan 2015-Mar 2015,Total,London,Change on year,20100,number of people,93037,-70292,107169,34172
+2015-03-01,Jan 2015-Mar 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.1,72.2,23
+2015-03-01,Jan 2015-Mar 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.3,0
+2015-03-01,Jan 2015-Mar 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.6,0.9,0.3
+2015-04-01,Feb 2015-Apr 2015,Total,London,Level,20100,number of people,6813877,285190,4211969,1351387
+2015-04-01,Feb 2015-Apr 2015,Total,London,Change on quarter,20100,number of people,23905,516,-6423,24605
+2015-04-01,Feb 2015-Apr 2015,Total,London,Change on year,20100,number of people,93728,-60861,72948,60385
+2015-04-01,Feb 2015-Apr 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.2,72,23.1
+2015-04-01,Feb 2015-Apr 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,-0.4,0.3
+2015-04-01,Feb 2015-Apr 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.3,0.3,0.7
+2015-05-01,Mar 2015-May 2015,Total,London,Level,20100,number of people,6821726,303122,4203336,1344929
+2015-05-01,Mar 2015-May 2015,Total,London,Change on quarter,20100,number of people,24005,15502,-13368,11743
+2015-05-01,Mar 2015-May 2015,Total,London,Change on year,20100,number of people,94295,-30069,52023,50731
+2015-05-01,Mar 2015-May 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.6,71.8,23
+2015-05-01,Mar 2015-May 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.5,0.1
+2015-05-01,Mar 2015-May 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0,0.6
+2015-06-01,Apr 2015-Jun 2015,Total,London,Level,20100,number of people,6829643,300475,4226271,1333909
+2015-06-01,Apr 2015-Jun 2015,Total,London,Change on quarter,20100,number of people,23901,15809,10449,-9858
+2015-06-01,Apr 2015-Jun 2015,Total,London,Change on year,20100,number of people,94755,-22509,63051,34949
+2015-06-01,Apr 2015-Jun 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.5,72.1,22.8
+2015-06-01,Apr 2015-Jun 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,-0.1,-0.2
+2015-06-01,Apr 2015-Jun 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.1,0.3
+2015-07-01,May 2015-Jul 2015,Total,London,Level,20100,number of people,6837743,293235,4239452,1337960
+2015-07-01,May 2015-Jul 2015,Total,London,Change on quarter,20100,number of people,23866,8045,27483,-13427
+2015-07-01,May 2015-Jul 2015,Total,London,Change on year,20100,number of people,95613,-15846,67595,25228
+2015-07-01,May 2015-Jul 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.3,72.3,22.8
+2015-07-01,May 2015-Jul 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.2,-0.3
+2015-07-01,May 2015-Jul 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.2,0.1
+2015-08-01,Jun 2015-Aug 2015,Total,London,Level,20100,number of people,6843556,273689,4266486,1341089
+2015-08-01,Jun 2015-Aug 2015,Total,London,Change on quarter,20100,number of people,21830,-29433,63150,-3840
+2015-08-01,Jun 2015-Aug 2015,Total,London,Change on year,20100,number of people,93302,-24911,74579,26582
+2015-08-01,Jun 2015-Aug 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.9,72.7,22.8
+2015-08-01,Jun 2015-Aug 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.9,-0.1
+2015-08-01,Jun 2015-Aug 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,0.3,0.2
+2015-09-01,Jul 2015-Sep 2015,Total,London,Level,20100,number of people,6849610,301783,4253307,1327307
+2015-09-01,Jul 2015-Sep 2015,Total,London,Change on quarter,20100,number of people,19967,1308,27036,-6602
+2015-09-01,Jul 2015-Sep 2015,Total,London,Change on year,20100,number of people,91342,11461,54698,5177
+2015-09-01,Jul 2015-Sep 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.4,72.4,22.6
+2015-09-01,Jul 2015-Sep 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.3,-0.2
+2015-09-01,Jul 2015-Sep 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0,-0.2
+2015-10-01,Aug 2015-Oct 2015,Total,London,Level,20100,number of people,6855778,305362,4289058,1298562
+2015-10-01,Aug 2015-Oct 2015,Total,London,Change on quarter,20100,number of people,18035,12127,49606,-39398
+2015-10-01,Aug 2015-Oct 2015,Total,London,Change on year,20100,number of people,89747,4043,112247,-45600
+2015-10-01,Aug 2015-Oct 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.5,72.9,22.1
+2015-10-01,Aug 2015-Oct 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,0.7,-0.7
+2015-10-01,Aug 2015-Oct 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,1,-1.1
+2015-11-01,Sep 2015-Nov 2015,Total,London,Level,20100,number of people,6861696,299953,4282494,1313289
+2015-11-01,Sep 2015-Nov 2015,Total,London,Change on quarter,20100,number of people,18140,26264,16008,-27800
+2015-11-01,Sep 2015-Nov 2015,Total,London,Change on year,20100,number of people,87557,-3229,117333,-43228
+2015-11-01,Sep 2015-Nov 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.4,72.8,22.3
+2015-11-01,Sep 2015-Nov 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.5,0.1,-0.5
+2015-11-01,Sep 2015-Nov 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,1.2,-1
+2015-12-01,Oct 2015-Dec 2015,Total,London,Level,20100,number of people,6867837,299543,4290791,1303958
+2015-12-01,Oct 2015-Dec 2015,Total,London,Change on quarter,20100,number of people,18227,-2240,37484,-23349
+2015-12-01,Oct 2015-Dec 2015,Total,London,Change on year,20100,number of people,85829,-1527,106486,-36534
+2015-12-01,Oct 2015-Dec 2015,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.3,72.9,22.1
+2015-12-01,Oct 2015-Dec 2015,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.5,-0.4
+2015-12-01,Oct 2015-Dec 2015,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,1,-0.9
+2016-01-01,Nov 2015-Jan 2016,Total,London,Level,20100,number of people,6873700,290382,4287967,1315808
+2016-01-01,Nov 2015-Jan 2016,Total,London,Change on quarter,20100,number of people,17922,-14980,-1091,17246
+2016-01-01,Nov 2015-Jan 2016,Total,London,Change on year,20100,number of people,83728,5708,69575,-10974
+2016-01-01,Nov 2015-Jan 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.2,72.8,22.3
+2016-01-01,Nov 2015-Jan 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,-0.2,0.2
+2016-01-01,Nov 2015-Jan 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.4,-0.4
+2016-02-01,Dec 2015-Feb 2016,Total,London,Level,20100,number of people,6879978,291380,4305311,1304160
+2016-02-01,Dec 2015-Feb 2016,Total,London,Change on quarter,20100,number of people,18282,-8573,22817,-9129
+2016-02-01,Dec 2015-Feb 2016,Total,London,Change on year,20100,number of people,82257,3760,88607,-29026
+2016-02-01,Dec 2015-Feb 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.2,73,22.1
+2016-02-01,Dec 2015-Feb 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,0.2,-0.2
+2016-02-01,Dec 2015-Feb 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.7,-0.7
+2016-03-01,Jan 2016-Mar 2016,Total,London,Level,20100,number of people,6886009,267647,4324337,1312487
+2016-03-01,Jan 2016-Mar 2016,Total,London,Change on quarter,20100,number of people,18172,-31896,33546,8529
+2016-03-01,Jan 2016-Mar 2016,Total,London,Change on year,20100,number of people,80267,-17019,108515,-31280
+2016-03-01,Jan 2016-Mar 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.7,73.3,22.2
+2016-03-01,Jan 2016-Mar 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.4,0.1
+2016-03-01,Jan 2016-Mar 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,1.1,-0.8
+2016-04-01,Feb 2016-Apr 2016,Total,London,Level,20100,number of people,6891983,272824,4334789,1299212
+2016-04-01,Feb 2016-Apr 2016,Total,London,Change on quarter,20100,number of people,18283,-17558,46822,-16596
+2016-04-01,Feb 2016-Apr 2016,Total,London,Change on year,20100,number of people,78106,-12366,122820,-52175
+2016-04-01,Feb 2016-Apr 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.7,73.4,22
+2016-04-01,Feb 2016-Apr 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.6,-0.3
+2016-04-01,Feb 2016-Apr 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,1.4,-1.1
+2016-05-01,Mar 2016-May 2016,Total,London,Level,20100,number of people,6897980,272526,4335027,1302219
+2016-05-01,Mar 2016-May 2016,Total,London,Change on quarter,20100,number of people,18002,-18854,29716,-1941
+2016-05-01,Mar 2016-May 2016,Total,London,Change on year,20100,number of people,76254,-30596,131691,-42710
+2016-05-01,Mar 2016-May 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.7,73.3,22
+2016-05-01,Mar 2016-May 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.3,-0.1
+2016-05-01,Mar 2016-May 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,1.5,-0.9
+2016-06-01,Apr 2016-Jun 2016,Total,London,Level,20100,number of people,6903977,275352,4338645,1300723
+2016-06-01,Apr 2016-Jun 2016,Total,London,Change on quarter,20100,number of people,17968,7705,14308,-11764
+2016-06-01,Apr 2016-Jun 2016,Total,London,Change on year,20100,number of people,74334,-25123,112374,-33186
+2016-06-01,Apr 2016-Jun 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.8,73.3,22
+2016-06-01,Apr 2016-Jun 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.1,-0.2
+2016-06-01,Apr 2016-Jun 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,1.2,-0.8
+2016-07-01,May 2016-Jul 2016,Total,London,Level,20100,number of people,6910068,285606,4340216,1297368
+2016-07-01,May 2016-Jul 2016,Total,London,Change on quarter,20100,number of people,18085,12782,5427,-1844
+2016-07-01,May 2016-Jul 2016,Total,London,Change on year,20100,number of people,72325,-7629,100764,-40592
+2016-07-01,May 2016-Jul 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6,73.3,21.9
+2016-07-01,May 2016-Jul 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,-0.1,-0.1
+2016-07-01,May 2016-Jul 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,1,-0.9
+2016-08-01,Jun 2016-Aug 2016,Total,London,Level,20100,number of people,6912855,290288,4342503,1295791
+2016-08-01,Jun 2016-Aug 2016,Total,London,Change on quarter,20100,number of people,14875,17762,7476,-6428
+2016-08-01,Jun 2016-Aug 2016,Total,London,Change on year,20100,number of people,69299,16599,76017,-45298
+2016-08-01,Jun 2016-Aug 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.1,73.3,21.9
+2016-08-01,Jun 2016-Aug 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,0,-0.1
+2016-08-01,Jun 2016-Aug 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,0.7,-1
+2016-09-01,Jul 2016-Sep 2016,Total,London,Level,20100,number of people,6915761,266509,4352116,1308468
+2016-09-01,Jul 2016-Sep 2016,Total,London,Change on quarter,20100,number of people,11784,-8843,13471,7745
+2016-09-01,Jul 2016-Sep 2016,Total,London,Change on year,20100,number of people,66151,-35274,98809,-18839
+2016-09-01,Jul 2016-Sep 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.6,73.5,22.1
+2016-09-01,Jul 2016-Sep 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,0.1,0.1
+2016-09-01,Jul 2016-Sep 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,1.1,-0.5
+2016-10-01,Aug 2016-Oct 2016,Total,London,Level,20100,number of people,6918564,264310,4362704,1306493
+2016-10-01,Aug 2016-Oct 2016,Total,London,Change on quarter,20100,number of people,8496,-21296,22488,9125
+2016-10-01,Aug 2016-Oct 2016,Total,London,Change on year,20100,number of people,62786,-41052,73646,7931
+2016-10-01,Aug 2016-Oct 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.6,73.6,22.1
+2016-10-01,Aug 2016-Oct 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.3,0.1
+2016-10-01,Aug 2016-Oct 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.9,0.7,0
+2016-11-01,Sep 2016-Nov 2016,Total,London,Level,20100,number of people,6921555,269945,4367666,1296893
+2016-11-01,Sep 2016-Nov 2016,Total,London,Change on quarter,20100,number of people,8700,-20343,25163,1102
+2016-11-01,Sep 2016-Nov 2016,Total,London,Change on year,20100,number of people,59859,-30008,85172,-16396
+2016-11-01,Sep 2016-Nov 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.7,73.7,21.9
+2016-11-01,Sep 2016-Nov 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.4,0
+2016-11-01,Sep 2016-Nov 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.9,-0.4
+2016-12-01,Oct 2016-Dec 2016,Total,London,Level,20100,number of people,6924520,265932,4362111,1301792
+2016-12-01,Oct 2016-Dec 2016,Total,London,Change on quarter,20100,number of people,8759,-577,9995,-6676
+2016-12-01,Oct 2016-Dec 2016,Total,London,Change on year,20100,number of people,56683,-33611,71320,-2166
+2016-12-01,Oct 2016-Dec 2016,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.6,73.6,22
+2016-12-01,Oct 2016-Dec 2016,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.1,-0.1
+2016-12-01,Oct 2016-Dec 2016,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.7,-0.2
+2017-01-01,Nov 2016-Jan 2017,Total,London,Level,20100,number of people,6927290,268704,4350354,1308422
+2017-01-01,Nov 2016-Jan 2017,Total,London,Change on quarter,20100,number of people,8726,4394,-12350,1929
+2017-01-01,Nov 2016-Jan 2017,Total,London,Change on year,20100,number of people,53590,-21678,62387,-7386
+2017-01-01,Nov 2016-Jan 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.6,73.4,22.1
+2017-01-01,Nov 2016-Jan 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,-0.3,0
+2017-01-01,Nov 2016-Jan 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.6,-0.3
+2017-02-01,Dec 2016-Feb 2017,Total,London,Level,20100,number of people,6930272,280000,4345683,1306390
+2017-02-01,Dec 2016-Feb 2017,Total,London,Change on quarter,20100,number of people,8717,10055,-21983,9497
+2017-02-01,Dec 2016-Feb 2017,Total,London,Change on year,20100,number of people,50294,-11380,40372,2230
+2017-02-01,Dec 2016-Feb 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.9,73.3,22
+2017-02-01,Dec 2016-Feb 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,-0.4,0.1
+2017-02-01,Dec 2016-Feb 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.3,-0.1
+2017-03-01,Jan 2017-Mar 2017,Total,London,Level,20100,number of people,6933057,288214,4343039,1304100
+2017-03-01,Jan 2017-Mar 2017,Total,London,Change on quarter,20100,number of people,8537,22282,-19072,2308
+2017-03-01,Jan 2017-Mar 2017,Total,London,Change on year,20100,number of people,47048,20567,18702,-8387
+2017-03-01,Jan 2017-Mar 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6,73.2,22
+2017-03-01,Jan 2017-Mar 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.5,-0.4,0
+2017-03-01,Jan 2017-Mar 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,0,-0.2
+2017-04-01,Feb 2017-Apr 2017,Total,London,Level,20100,number of people,6935983,277295,4348373,1308676
+2017-04-01,Feb 2017-Apr 2017,Total,London,Change on quarter,20100,number of people,8693,8591,-1981,254
+2017-04-01,Feb 2017-Apr 2017,Total,London,Change on year,20100,number of people,44000,4471,13584,9464
+2017-04-01,Feb 2017-Apr 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.8,73.3,22.1
+2017-04-01,Feb 2017-Apr 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,-0.1,0
+2017-04-01,Feb 2017-Apr 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,-0.1,0.1
+2017-05-01,Mar 2017-May 2017,Total,London,Level,20100,number of people,6938985,258373,4391546,1282503
+2017-05-01,Mar 2017-May 2017,Total,London,Change on quarter,20100,number of people,8713,-21627,45863,-23887
+2017-05-01,Mar 2017-May 2017,Total,London,Change on year,20100,number of people,41005,-14153,56519,-19716
+2017-05-01,Mar 2017-May 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.4,74,21.6
+2017-05-01,Mar 2017-May 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.7,-0.4
+2017-05-01,Mar 2017-May 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.7,-0.4
+2017-06-01,Apr 2017-Jun 2017,Total,London,Level,20100,number of people,6941816,261017,4415254,1258049
+2017-06-01,Apr 2017-Jun 2017,Total,London,Change on quarter,20100,number of people,8759,-27197,72215,-46051
+2017-06-01,Apr 2017-Jun 2017,Total,London,Change on year,20100,number of people,37839,-14335,76609,-42674
+2017-06-01,Apr 2017-Jun 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.4,74.4,21.2
+2017-06-01,Apr 2017-Jun 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,1.2,-0.8
+2017-06-01,Apr 2017-Jun 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,1,-0.8
+2017-07-01,May 2017-Jul 2017,Total,London,Level,20100,number of people,6944812,244758,4447150,1246801
+2017-07-01,May 2017-Jul 2017,Total,London,Change on quarter,20100,number of people,8829,-32537,98777,-61875
+2017-07-01,May 2017-Jul 2017,Total,London,Change on year,20100,number of people,34744,-40848,106934,-50567
+2017-07-01,May 2017-Jul 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.1,74.9,21
+2017-07-01,May 2017-Jul 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,1.6,-1.1
+2017-07-01,May 2017-Jul 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.9,1.6,-0.9
+2017-08-01,Jun 2017-Aug 2017,Total,London,Level,20100,number of people,6953421,232987,4460451,1256872
+2017-08-01,Jun 2017-Aug 2017,Total,London,Change on quarter,20100,number of people,14436,-25386,68905,-25631
+2017-08-01,Jun 2017-Aug 2017,Total,London,Change on year,20100,number of people,40566,-57301,117948,-38919
+2017-08-01,Jun 2017-Aug 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.8,75,21.1
+2017-08-01,Jun 2017-Aug 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,1,-0.5
+2017-08-01,Jun 2017-Aug 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.3,1.7,-0.7
+2017-09-01,Jul 2017-Sep 2017,Total,London,Level,20100,number of people,6962000,235483,4419942,1301072
+2017-09-01,Jul 2017-Sep 2017,Total,London,Change on quarter,20100,number of people,20184,-25534,4688,43023
+2017-09-01,Jul 2017-Sep 2017,Total,London,Change on year,20100,number of people,46239,-31026,67826,-7396
+2017-09-01,Jul 2017-Sep 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.9,74.3,21.9
+2017-09-01,Jul 2017-Sep 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,-0.1,0.7
+2017-09-01,Jul 2017-Sep 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.8,-0.2
+2017-10-01,Aug 2017-Oct 2017,Total,London,Level,20100,number of people,6970833,234733,4438737,1294673
+2017-10-01,Aug 2017-Oct 2017,Total,London,Change on quarter,20100,number of people,26021,-10025,-8413,47872
+2017-10-01,Aug 2017-Oct 2017,Total,London,Change on year,20100,number of people,52269,-29577,76033,-11820
+2017-10-01,Aug 2017-Oct 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.9,74.5,21.7
+2017-10-01,Aug 2017-Oct 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,-0.4,0.7
+2017-10-01,Aug 2017-Oct 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.9,-0.3
+2017-11-01,Sep 2017-Nov 2017,Total,London,Level,20100,number of people,6979469,253460,4435709,1284851
+2017-11-01,Sep 2017-Nov 2017,Total,London,Change on quarter,20100,number of people,26048,20473,-24742,27979
+2017-11-01,Sep 2017-Nov 2017,Total,London,Change on year,20100,number of people,57914,-16485,68043,-12042
+2017-11-01,Sep 2017-Nov 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.2,74.4,21.5
+2017-11-01,Sep 2017-Nov 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.7,0.4
+2017-11-01,Sep 2017-Nov 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.6,-0.3
+2017-12-01,Oct 2017-Dec 2017,Total,London,Level,20100,number of people,6988170,242048,4442728,1290734
+2017-12-01,Oct 2017-Dec 2017,Total,London,Change on quarter,20100,number of people,26170,6565,22786,-10338
+2017-12-01,Oct 2017-Dec 2017,Total,London,Change on year,20100,number of people,63650,-23884,80617,-11058
+2017-12-01,Oct 2017-Dec 2017,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5,74.4,21.6
+2017-12-01,Oct 2017-Dec 2017,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.1,-0.3
+2017-12-01,Oct 2017-Dec 2017,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,0.8,-0.4
+2018-01-01,Nov 2017-Jan 2018,Total,London,Level,20100,number of people,6996832,241823,4467268,1270896
+2018-01-01,Nov 2017-Jan 2018,Total,London,Change on quarter,20100,number of people,25999,7090,28531,-23777
+2018-01-01,Nov 2017-Jan 2018,Total,London,Change on year,20100,number of people,69542,-26881,116914,-37526
+2018-01-01,Nov 2017-Jan 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5,74.7,21.3
+2018-01-01,Nov 2017-Jan 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,0.2,-0.5
+2018-01-01,Nov 2017-Jan 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,1.3,-0.8
+2018-02-01,Dec 2017-Feb 2018,Total,London,Level,20100,number of people,7005416,234619,4487896,1267651
+2018-02-01,Dec 2017-Feb 2018,Total,London,Change on quarter,20100,number of people,25947,-18841,52187,-17200
+2018-02-01,Dec 2017-Feb 2018,Total,London,Change on year,20100,number of people,75144,-45381,142213,-38739
+2018-02-01,Dec 2017-Feb 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.8,75,21.2
+2018-02-01,Dec 2017-Feb 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.6,-0.4
+2018-02-01,Dec 2017-Feb 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1,1.7,-0.9
+2018-03-01,Jan 2018-Mar 2018,Total,London,Level,20100,number of people,7014276,242262,4500055,1256170
+2018-03-01,Jan 2018-Mar 2018,Total,London,Change on quarter,20100,number of people,26106,214,57327,-34564
+2018-03-01,Jan 2018-Mar 2018,Total,London,Change on year,20100,number of people,81219,-45952,157016,-47930
+2018-03-01,Jan 2018-Mar 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.9,75.1,21
+2018-03-01,Jan 2018-Mar 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.7,-0.7
+2018-03-01,Jan 2018-Mar 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.1,1.8,-1
+2018-04-01,Feb 2018-Apr 2018,Total,London,Level,20100,number of people,7022813,253584,4481108,1269008
+2018-04-01,Feb 2018-Apr 2018,Total,London,Change on quarter,20100,number of people,25981,11761,13840,-1888
+2018-04-01,Feb 2018-Apr 2018,Total,London,Change on year,20100,number of people,86830,-23711,132735,-39668
+2018-04-01,Feb 2018-Apr 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.2,74.7,21.1
+2018-04-01,Feb 2018-Apr 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,0,-0.1
+2018-04-01,Feb 2018-Apr 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,1.4,-0.9
+2018-05-01,Mar 2018-May 2018,Total,London,Level,20100,number of people,7031628,249485,4479874,1278205
+2018-05-01,Mar 2018-May 2018,Total,London,Change on quarter,20100,number of people,26212,14866,-8022,10554
+2018-05-01,Mar 2018-May 2018,Total,London,Change on year,20100,number of people,92643,-8888,88328,-4298
+2018-05-01,Mar 2018-May 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.1,74.6,21.3
+2018-05-01,Mar 2018-May 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,-0.4,0.1
+2018-05-01,Mar 2018-May 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.6,-0.3
+2018-06-01,Apr 2018-Jun 2018,Total,London,Level,20100,number of people,7040381,237670,4484487,1294713
+2018-06-01,Apr 2018-Jun 2018,Total,London,Change on quarter,20100,number of people,26105,-4592,-15568,38543
+2018-06-01,Apr 2018-Jun 2018,Total,London,Change on year,20100,number of people,98565,-23347,69233,36664
+2018-06-01,Apr 2018-Jun 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.9,74.5,21.5
+2018-06-01,Apr 2018-Jun 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.5,0.6
+2018-06-01,Apr 2018-Jun 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.2,0.3
+2018-07-01,May 2018-Jul 2018,Total,London,Level,20100,number of people,7049028,228121,4495084,1302343
+2018-07-01,May 2018-Jul 2018,Total,London,Change on quarter,20100,number of people,26215,-25463,13976,33335
+2018-07-01,May 2018-Jul 2018,Total,London,Change on year,20100,number of people,104216,-16637,47934,55542
+2018-07-01,May 2018-Jul 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.7,74.6,21.6
+2018-07-01,May 2018-Jul 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0,0.5
+2018-07-01,May 2018-Jul 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,-0.3,0.6
+2018-08-01,Jun 2018-Aug 2018,Total,London,Level,20100,number of people,7054593,229909,4512886,1291629
+2018-08-01,Jun 2018-Aug 2018,Total,London,Change on quarter,20100,number of people,22965,-19576,33012,13424
+2018-08-01,Jun 2018-Aug 2018,Total,London,Change on year,20100,number of people,101172,-3078,52435,34757
+2018-08-01,Jun 2018-Aug 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.7,74.9,21.4
+2018-08-01,Jun 2018-Aug 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.3,0.2
+2018-08-01,Jun 2018-Aug 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.2,0.3
+2018-09-01,Jul 2018-Sep 2018,Total,London,Level,20100,number of people,7060125,225262,4536036,1274322
+2018-09-01,Jul 2018-Sep 2018,Total,London,Change on quarter,20100,number of people,19744,-12408,51549,-20391
+2018-09-01,Jul 2018-Sep 2018,Total,London,Change on year,20100,number of people,98125,-10221,116094,-26750
+2018-09-01,Jul 2018-Sep 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,75.2,21.1
+2018-09-01,Jul 2018-Sep 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.7,-0.4
+2018-09-01,Jul 2018-Sep 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.9,-0.7
+2018-10-01,Aug 2018-Oct 2018,Total,London,Level,20100,number of people,7065667,228850,4557186,1257394
+2018-10-01,Aug 2018-Oct 2018,Total,London,Change on quarter,20100,number of people,16639,729,62102,-44949
+2018-10-01,Aug 2018-Oct 2018,Total,London,Change on year,20100,number of people,94834,-5883,118449,-37279
+2018-10-01,Aug 2018-Oct 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,75.5,20.8
+2018-10-01,Aug 2018-Oct 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.9,-0.8
+2018-10-01,Aug 2018-Oct 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,1,-0.9
+2018-11-01,Sep 2018-Nov 2018,Total,London,Level,20100,number of people,7071163,223704,4526051,1295852
+2018-11-01,Sep 2018-Nov 2018,Total,London,Change on quarter,20100,number of people,16570,-6205,13165,4223
+2018-11-01,Sep 2018-Nov 2018,Total,London,Change on year,20100,number of people,91694,-29756,90342,11001
+2018-11-01,Sep 2018-Nov 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,75,21.5
+2018-11-01,Sep 2018-Nov 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.1,0
+2018-11-01,Sep 2018-Nov 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.6,-0.1
+2018-12-01,Oct 2018-Dec 2018,Total,London,Level,20100,number of people,7076856,217662,4522501,1304097
+2018-12-01,Oct 2018-Dec 2018,Total,London,Change on quarter,20100,number of people,16731,-7600,-13535,29775
+2018-12-01,Oct 2018-Dec 2018,Total,London,Change on year,20100,number of people,88686,-24386,79773,13363
+2018-12-01,Oct 2018-Dec 2018,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.5,74.8,21.6
+2018-12-01,Oct 2018-Dec 2018,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.4,0.5
+2018-12-01,Oct 2018-Dec 2018,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,0.5,0
+2019-01-01,Nov 2018-Jan 2019,Total,London,Level,20100,number of people,7082284,206608,4556128,1285921
+2019-01-01,Nov 2018-Jan 2019,Total,London,Change on quarter,20100,number of people,16617,-22242,-1058,28527
+2019-01-01,Nov 2018-Jan 2019,Total,London,Change on year,20100,number of people,85452,-35215,88860,15025
+2019-01-01,Nov 2018-Jan 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.2,75.4,21.3
+2019-01-01,Nov 2018-Jan 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,-0.2,0.4
+2019-01-01,Nov 2018-Jan 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.7,0
+2019-02-01,Dec 2018-Feb 2019,Total,London,Level,20100,number of people,7087762,217972,4527947,1308459
+2019-02-01,Dec 2018-Feb 2019,Total,London,Change on quarter,20100,number of people,16599,-5732,1896,12607
+2019-02-01,Dec 2018-Feb 2019,Total,London,Change on year,20100,number of people,82346,-16647,40051,40808
+2019-02-01,Dec 2018-Feb 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.5,74.8,21.6
+2019-02-01,Dec 2018-Feb 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.1,0.2
+2019-02-01,Dec 2018-Feb 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,-0.1,0.5
+2019-03-01,Jan 2019-Mar 2019,Total,London,Level,20100,number of people,7093407,214018,4538153,1309105
+2019-03-01,Jan 2019-Mar 2019,Total,London,Change on quarter,20100,number of people,16551,-3644,15652,5008
+2019-03-01,Jan 2019-Mar 2019,Total,London,Change on year,20100,number of people,79131,-28244,38098,52935
+2019-03-01,Jan 2019-Mar 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.4,75,21.6
+2019-03-01,Jan 2019-Mar 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.1,0
+2019-03-01,Jan 2019-Mar 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,-0.1,0.7
+2019-04-01,Feb 2019-Apr 2019,Total,London,Level,20100,number of people,7099035,208890,4535678,1317950
+2019-04-01,Feb 2019-Apr 2019,Total,London,Change on quarter,20100,number of people,16751,2282,-20450,32029
+2019-04-01,Feb 2019-Apr 2019,Total,London,Change on year,20100,number of people,76222,-44694,54570,48942
+2019-04-01,Feb 2019-Apr 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.3,74.9,21.8
+2019-04-01,Feb 2019-Apr 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,-0.5,0.5
+2019-04-01,Feb 2019-Apr 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.9,0.2,0.6
+2019-05-01,Mar 2019-May 2019,Total,London,Level,20100,number of people,7104562,208763,4543656,1307914
+2019-05-01,Mar 2019-May 2019,Total,London,Change on quarter,20100,number of people,16800,-9209,15709,-545
+2019-05-01,Mar 2019-May 2019,Total,London,Change on year,20100,number of people,72934,-40722,63782,29709
+2019-05-01,Mar 2019-May 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.3,75,21.6
+2019-05-01,Mar 2019-May 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,0.1,-0.1
+2019-05-01,Mar 2019-May 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.4,0.3
+2019-06-01,Apr 2019-Jun 2019,Total,London,Level,20100,number of people,7110074,221989,4528847,1317372
+2019-06-01,Apr 2019-Jun 2019,Total,London,Change on quarter,20100,number of people,16667,7971,-9306,8267
+2019-06-01,Apr 2019-Jun 2019,Total,London,Change on year,20100,number of people,69693,-15681,44360,22659
+2019-06-01,Apr 2019-Jun 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.5,74.7,21.7
+2019-06-01,Apr 2019-Jun 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,-0.3,0.1
+2019-06-01,Apr 2019-Jun 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.1,0.2
+2019-07-01,May 2019-Jul 2019,Total,London,Level,20100,number of people,7115696,225144,4510350,1339215
+2019-07-01,May 2019-Jul 2019,Total,London,Change on quarter,20100,number of people,16661,16254,-25328,21265
+2019-07-01,May 2019-Jul 2019,Total,London,Change on year,20100,number of people,66668,-2977,15266,36872
+2019-07-01,May 2019-Jul 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,74.3,22.1
+2019-07-01,May 2019-Jul 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.6,0.3
+2019-07-01,May 2019-Jul 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,-0.3,0.4
+2019-08-01,Jun 2019-Aug 2019,Total,London,Level,20100,number of people,7120906,225416,4507392,1348097
+2019-08-01,Jun 2019-Aug 2019,Total,London,Change on quarter,20100,number of people,16344,16653,-36264,40183
+2019-08-01,Jun 2019-Aug 2019,Total,London,Change on year,20100,number of people,66313,-4493,-5494,56468
+2019-08-01,Jun 2019-Aug 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,74.2,22.2
+2019-08-01,Jun 2019-Aug 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.7,0.6
+2019-08-01,Jun 2019-Aug 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.7,0.8
+2019-09-01,Jul 2019-Sep 2019,Total,London,Level,20100,number of people,7126246,222479,4535355,1325019
+2019-09-01,Jul 2019-Sep 2019,Total,London,Change on quarter,20100,number of people,16172,490,6508,7647
+2019-09-01,Jul 2019-Sep 2019,Total,London,Change on year,20100,number of people,66121,-2783,-681,50697
+2019-09-01,Jul 2019-Sep 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.5,74.6,21.8
+2019-09-01,Jul 2019-Sep 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0,0.1
+2019-09-01,Jul 2019-Sep 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,-0.6,0.7
+2019-10-01,Aug 2019-Oct 2019,Total,London,Level,20100,number of people,7131545,221300,4547785,1319651
+2019-10-01,Aug 2019-Oct 2019,Total,London,Change on quarter,20100,number of people,15849,-3844,37435,-19564
+2019-10-01,Aug 2019-Oct 2019,Total,London,Change on year,20100,number of people,65878,-7550,-9401,62257
+2019-10-01,Aug 2019-Oct 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.5,74.8,21.7
+2019-10-01,Aug 2019-Oct 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,0.5,-0.4
+2019-10-01,Aug 2019-Oct 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.7,0.9
+2019-11-01,Sep 2019-Nov 2019,Total,London,Level,20100,number of people,7136924,213947,4601732,1275869
+2019-11-01,Sep 2019-Nov 2019,Total,London,Change on quarter,20100,number of people,16018,-11469,94340,-72228
+2019-11-01,Sep 2019-Nov 2019,Total,London,Change on year,20100,number of people,65761,-9757,75681,-19983
+2019-11-01,Sep 2019-Nov 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.3,75.6,21
+2019-11-01,Sep 2019-Nov 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,1.4,-1.2
+2019-11-01,Sep 2019-Nov 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.7,-0.5
+2019-12-01,Oct 2019-Dec 2019,Total,London,Level,20100,number of people,7142245,212835,4597936,1284140
+2019-12-01,Oct 2019-Dec 2019,Total,London,Change on quarter,20100,number of people,15999,-9644,62581,-40879
+2019-12-01,Oct 2019-Dec 2019,Total,London,Change on year,20100,number of people,65389,-4827,75435,-19957
+2019-12-01,Oct 2019-Dec 2019,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.3,75.5,21.1
+2019-12-01,Oct 2019-Dec 2019,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.3,0.9,-0.7
+2019-12-01,Oct 2019-Dec 2019,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,0.7,-0.5
+2020-01-01,Nov 2019-Jan 2020,Total,London,Level,20100,number of people,7147672,224354,4629941,1244387
+2020-01-01,Nov 2019-Jan 2020,Total,London,Change on quarter,20100,number of people,16127,3054,82156,-75264
+2020-01-01,Nov 2019-Jan 2020,Total,London,Change on year,20100,number of people,65388,17746,73813,-41534
+2020-01-01,Nov 2019-Jan 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.5,76,20.4
+2020-01-01,Nov 2019-Jan 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,1.2,-1.3
+2020-01-01,Nov 2019-Jan 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,0.7,-0.8
+2020-02-01,Dec 2019-Feb 2020,Total,London,Level,20100,number of people,7152819,229245,4677031,1199498
+2020-02-01,Dec 2019-Feb 2020,Total,London,Change on quarter,20100,number of people,15895,15298,75299,-76371
+2020-02-01,Dec 2019-Feb 2020,Total,London,Change on year,20100,number of people,65057,11273,149084,-108961
+2020-02-01,Dec 2019-Feb 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.5,76.7,19.7
+2020-02-01,Dec 2019-Feb 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.2,1.1,-1.3
+2020-02-01,Dec 2019-Feb 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,1.9,-1.9
+2020-03-01,Jan 2020-Mar 2020,Total,London,Level,20100,number of people,7153146,244709,4662390,1198368
+2020-03-01,Jan 2020-Mar 2020,Total,London,Change on quarter,20100,number of people,10901,31874,64454,-85772
+2020-03-01,Jan 2020-Mar 2020,Total,London,Change on year,20100,number of people,59739,30691,124237,-110737
+2020-03-01,Jan 2020-Mar 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.8,76.5,19.7
+2020-03-01,Jan 2020-Mar 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.5,1,-1.4
+2020-03-01,Jan 2020-Mar 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,1.6,-2
+2020-04-01,Feb 2020-Apr 2020,Total,London,Level,20100,number of people,7152512,245368,4632029,1216767
+2020-04-01,Feb 2020-Apr 2020,Total,London,Change on quarter,20100,number of people,4840,21014,2088,-27620
+2020-04-01,Feb 2020-Apr 2020,Total,London,Change on year,20100,number of people,53477,36478,96351,-101183
+2020-04-01,Feb 2020-Apr 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.9,76,20
+2020-04-01,Feb 2020-Apr 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,0,-0.5
+2020-04-01,Feb 2020-Apr 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.6,1.2,-1.8
+2020-05-01,Mar 2020-May 2020,Total,London,Level,20100,number of people,7152332,265926,4583460,1241717
+2020-05-01,Mar 2020-May 2020,Total,London,Change on quarter,20100,number of people,-487,36681,-93571,42219
+2020-05-01,Mar 2020-May 2020,Total,London,Change on year,20100,number of people,47770,57163,39804,-66197
+2020-05-01,Mar 2020-May 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.3,75.2,20.4
+2020-05-01,Mar 2020-May 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.8,-1.5,0.7
+2020-05-01,Mar 2020-May 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.1,0.3,-1.2
+2020-06-01,Apr 2020-Jun 2020,Total,London,Level,20100,number of people,7158396,244770,4632330,1218050
+2020-06-01,Apr 2020-Jun 2020,Total,London,Change on quarter,20100,number of people,5250,61,-30060,19682
+2020-06-01,Apr 2020-Jun 2020,Total,London,Change on year,20100,number of people,48322,22781,103483,-99322
+2020-06-01,Apr 2020-Jun 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.9,76,20
+2020-06-01,Apr 2020-Jun 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.1,-0.5,0.3
+2020-06-01,Apr 2020-Jun 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,1.3,-1.7
+2020-07-01,May 2020-Jul 2020,Total,London,Level,20100,number of people,7169581,265376,4654545,1188540
+2020-07-01,May 2020-Jul 2020,Total,London,Change on quarter,20100,number of people,17069,20008,22516,-28227
+2020-07-01,May 2020-Jul 2020,Total,London,Change on year,20100,number of people,53885,40232,144195,-150675
+2020-07-01,May 2020-Jul 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.2,76.3,19.5
+2020-07-01,May 2020-Jul 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,0.2,-0.5
+2020-07-01,May 2020-Jul 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.6,1.9,-2.6
+2020-08-01,Jun 2020-Aug 2020,Total,London,Level,20100,number of people,7176629,270908,4637960,1207801
+2020-08-01,Jun 2020-Aug 2020,Total,London,Change on quarter,20100,number of people,24297,4982,54500,-33916
+2020-08-01,Jun 2020-Aug 2020,Total,London,Change on year,20100,number of people,55723,45492,130568,-140296
+2020-08-01,Jun 2020-Aug 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.3,75.9,19.8
+2020-08-01,Jun 2020-Aug 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,0.7,-0.6
+2020-08-01,Jun 2020-Aug 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.7,1.7,-2.4
+2020-09-01,Jul 2020-Sep 2020,Total,London,Level,20100,number of people,7181402,310236,4576121,1237813
+2020-09-01,Jul 2020-Sep 2020,Total,London,Change on quarter,20100,number of people,23006,65466,-56209,19763
+2020-09-01,Jul 2020-Sep 2020,Total,London,Change on year,20100,number of people,55156,87757,40766,-87206
+2020-09-01,Jul 2020-Sep 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.1,74.9,20.3
+2020-09-01,Jul 2020-Sep 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.3,-1.1,0.3
+2020-09-01,Jul 2020-Sep 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.6,0.2,-1.6
+2020-10-01,Aug 2020-Oct 2020,Total,London,Level,20100,number of people,7185279,330843,4574210,1221851
+2020-10-01,Aug 2020-Oct 2020,Total,London,Change on quarter,20100,number of people,15698,65467,-80335,33311
+2020-10-01,Aug 2020-Oct 2020,Total,London,Change on year,20100,number of people,53734,109543,26425,-97800
+2020-10-01,Aug 2020-Oct 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.5,74.8,20
+2020-10-01,Aug 2020-Oct 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.3,-1.4,0.5
+2020-10-01,Aug 2020-Oct 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,2,0,-1.7
+2020-11-01,Sep 2020-Nov 2020,Total,London,Level,20100,number of people,7186841,362456,4572805,1193393
+2020-11-01,Sep 2020-Nov 2020,Total,London,Change on quarter,20100,number of people,10212,91548,-65155,-14408
+2020-11-01,Sep 2020-Nov 2020,Total,London,Change on year,20100,number of people,49917,148509,-28927,-82476
+2020-11-01,Sep 2020-Nov 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7.1,74.8,19.5
+2020-11-01,Sep 2020-Nov 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.8,-1.1,-0.3
+2020-11-01,Sep 2020-Nov 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,2.8,-0.8,-1.5
+2020-12-01,Oct 2020-Dec 2020,Total,London,Level,20100,number of people,7188709,366616,4545088,1208470
+2020-12-01,Oct 2020-Dec 2020,Total,London,Change on quarter,20100,number of people,7307,56380,-31033,-29343
+2020-12-01,Oct 2020-Dec 2020,Total,London,Change on year,20100,number of people,46464,153781,-52848,-75670
+2020-12-01,Oct 2020-Dec 2020,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7.2,74.3,19.8
+2020-12-01,Oct 2020-Dec 2020,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.1,-0.5,-0.5
+2020-12-01,Oct 2020-Dec 2020,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,2.9,-1.2,-1.3
+2021-01-01,Nov 2020-Jan 2021,Total,London,Level,20100,number of people,7189893,379066,4527522,1213271
+2021-01-01,Nov 2020-Jan 2021,Total,London,Change on quarter,20100,number of people,4614,48223,-46688,-8580
+2021-01-01,Nov 2020-Jan 2021,Total,London,Change on year,20100,number of people,42221,154712,-102419,-31116
+2021-01-01,Nov 2020-Jan 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7.5,74.1,19.8
+2021-01-01,Nov 2020-Jan 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.9,-0.8,-0.1
+2021-01-01,Nov 2020-Jan 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,3,-2,-0.6
+2021-02-01,Dec 2020-Feb 2021,Total,London,Level,20100,number of people,7193537,372742,4534077,1215546
+2021-02-01,Dec 2020-Feb 2021,Total,London,Change on quarter,20100,number of people,6696,10286,-38728,22153
+2021-02-01,Dec 2020-Feb 2021,Total,London,Change on year,20100,number of people,40718,143497,-142954,16048
+2021-02-01,Dec 2020-Feb 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7.3,74.1,19.9
+2021-02-01,Dec 2020-Feb 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.3,-0.7,0.4
+2021-02-01,Dec 2020-Feb 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,2.9,-2.6,0.2
+2021-03-01,Jan 2021-Mar 2021,Total,London,Level,20100,number of people,7196451,355455,4558621,1210680
+2021-03-01,Jan 2021-Mar 2021,Total,London,Change on quarter,20100,number of people,7742,-11161,13533,2210
+2021-03-01,Jan 2021-Mar 2021,Total,London,Change on year,20100,number of people,43305,110746,-103769,12312
+2021-03-01,Jan 2021-Mar 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,7,74.5,19.8
+2021-03-01,Jan 2021-Mar 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.2,0.2,0
+2021-03-01,Jan 2021-Mar 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,2.2,-2,0.1
+2021-04-01,Feb 2021-Apr 2021,Total,London,Level,20100,number of people,7199858,338282,4557635,1225986
+2021-04-01,Feb 2021-Apr 2021,Total,London,Change on quarter,20100,number of people,9965,-40784,30113,12715
+2021-04-01,Feb 2021-Apr 2021,Total,London,Change on year,20100,number of people,47346,92914,-74394,9219
+2021-04-01,Feb 2021-Apr 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.7,74.5,20
+2021-04-01,Feb 2021-Apr 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.4,0.2
+2021-04-01,Feb 2021-Apr 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.8,-1.5,0.1
+2021-05-01,Mar 2021-May 2021,Total,London,Level,20100,number of people,7205355,330252,4567258,1235211
+2021-05-01,Mar 2021-May 2021,Total,London,Change on quarter,20100,number of people,11818,-42490,33181,19665
+2021-05-01,Mar 2021-May 2021,Total,London,Change on year,20100,number of people,53023,64326,-16202,-6506
+2021-05-01,Mar 2021-May 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.5,74.6,20.2
+2021-05-01,Mar 2021-May 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.5,0.3
+2021-05-01,Mar 2021-May 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.2,-0.6,-0.2
+2021-06-01,Apr 2021-Jun 2021,Total,London,Level,20100,number of people,7209874,321139,4581785,1233566
+2021-06-01,Apr 2021-Jun 2021,Total,London,Change on quarter,20100,number of people,13423,-34316,23164,22886
+2021-06-01,Apr 2021-Jun 2021,Total,London,Change on year,20100,number of people,51478,76369,-50545,15516
+2021-06-01,Apr 2021-Jun 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6.3,74.8,20.1
+2021-06-01,Apr 2021-Jun 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.3,0.3
+2021-06-01,Apr 2021-Jun 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,1.5,-1.2,0.2
+2021-07-01,May 2021-Jul 2021,Total,London,Level,20100,number of people,7221821,306391,4596236,1244070
+2021-07-01,May 2021-Jul 2021,Total,London,Change on quarter,20100,number of people,21963,-31891,38601,18084
+2021-07-01,May 2021-Jul 2021,Total,London,Change on year,20100,number of people,52240,41015,-58309,55530
+2021-07-01,May 2021-Jul 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,6,74.9,20.3
+2021-07-01,May 2021-Jul 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,0.4,0.2
+2021-07-01,May 2021-Jul 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.8,-1.3,0.8
+2021-08-01,Jun 2021-Aug 2021,Total,London,Level,20100,number of people,7226446,292386,4603302,1249909
+2021-08-01,Jun 2021-Aug 2021,Total,London,Change on quarter,20100,number of people,21091,-37866,36044,14698
+2021-08-01,Jun 2021-Aug 2021,Total,London,Change on year,20100,number of people,49817,21478,-34658,42108
+2021-08-01,Jun 2021-Aug 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.8,75,20.4
+2021-08-01,Jun 2021-Aug 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.8,0.4,0.2
+2021-08-01,Jun 2021-Aug 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0.4,-0.9,0.6
+2021-09-01,Jul 2021-Sep 2021,Total,London,Level,20100,number of people,7228921,283989,4613708,1252002
+2021-09-01,Jul 2021-Sep 2021,Total,London,Change on quarter,20100,number of people,19047,-37150,31923,18436
+2021-09-01,Jul 2021-Sep 2021,Total,London,Change on year,20100,number of people,47519,-26247,37587,14189
+2021-09-01,Jul 2021-Sep 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.6,75.1,20.4
+2021-09-01,Jul 2021-Sep 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.3,0.3
+2021-09-01,Jul 2021-Sep 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.3,0.1
+2021-10-01,Aug 2021-Oct 2021,Total,London,Level,20100,number of people,7230961,271154,4634924,1246721
+2021-10-01,Aug 2021-Oct 2021,Total,London,Change on quarter,20100,number of people,9140,-35237,38688,2651
+2021-10-01,Aug 2021-Oct 2021,Total,London,Change on year,20100,number of people,45682,-59689,60714,24870
+2021-10-01,Aug 2021-Oct 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.4,75.5,20.3
+2021-10-01,Aug 2021-Oct 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.5,0
+2021-10-01,Aug 2021-Oct 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.2,0.6,0.3
+2021-11-01,Sep 2021-Nov 2021,Total,London,Level,20100,number of people,7228851,269786,4642302,1237005
+2021-11-01,Sep 2021-Nov 2021,Total,London,Change on quarter,20100,number of people,2405,-22600,39000,-12904
+2021-11-01,Sep 2021-Nov 2021,Total,London,Change on year,20100,number of people,42010,-92670,69497,43612
+2021-11-01,Sep 2021-Nov 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.3,75.6,20.1
+2021-11-01,Sep 2021-Nov 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.6,-0.2
+2021-11-01,Sep 2021-Nov 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.8,0.8,0.6
+2021-12-01,Oct 2021-Dec 2021,Total,London,Level,20100,number of people,7227083,260512,4660351,1219261
+2021-12-01,Oct 2021-Dec 2021,Total,London,Change on quarter,20100,number of people,-1838,-23477,46643,-32741
+2021-12-01,Oct 2021-Dec 2021,Total,London,Change on year,20100,number of people,38374,-106104,115263,10791
+2021-12-01,Oct 2021-Dec 2021,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5.1,75.9,19.9
+2021-12-01,Oct 2021-Dec 2021,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.5,0.8,-0.5
+2021-12-01,Oct 2021-Dec 2021,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.1,1.6,0.1
+2022-01-01,Nov 2021-Jan 2022,Total,London,Level,20100,number of people,7225736,251495,4645578,1242078
+2022-01-01,Nov 2021-Jan 2022,Total,London,Change on quarter,20100,number of people,-5225,-19659,10654,-4643
+2022-01-01,Nov 2021-Jan 2022,Total,London,Change on year,20100,number of people,35843,-127571,118056,28807
+2022-01-01,Nov 2021-Jan 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,5,75.7,20.2
+2022-01-01,Nov 2021-Jan 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,0.2,-0.1
+2022-01-01,Nov 2021-Jan 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.5,1.6,0.4
+2022-02-01,Dec 2021-Feb 2022,Total,London,Level,20100,number of people,7227538,232119,4648864,1257357
+2022-02-01,Dec 2021-Feb 2022,Total,London,Change on quarter,20100,number of people,-1313,-37667,6562,20352
+2022-02-01,Dec 2021-Feb 2022,Total,London,Change on year,20100,number of people,34001,-140623,114787,41811
+2022-02-01,Dec 2021-Feb 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,75.7,20.5
+2022-02-01,Dec 2021-Feb 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.7,0.1,0.3
+2022-02-01,Dec 2021-Feb 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.8,1.6,0.6
+2022-03-01,Jan 2022-Mar 2022,Total,London,Level,20100,number of people,7230580,236626,4618816,1291306
+2022-03-01,Jan 2022-Mar 2022,Total,London,Change on quarter,20100,number of people,3497,-23886,-41535,72045
+2022-03-01,Jan 2022-Mar 2022,Total,London,Change on year,20100,number of people,34129,-118829,60195,80626
+2022-03-01,Jan 2022-Mar 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.7,75.2,21
+2022-03-01,Jan 2022-Mar 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.4,-0.7,1.2
+2022-03-01,Jan 2022-Mar 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-2.3,0.7,1.2
+2022-04-01,Feb 2022-Apr 2022,Total,London,Level,20100,number of people,7232005,244905,4615559,1282623
+2022-04-01,Feb 2022-Apr 2022,Total,London,Change on quarter,20100,number of people,6269,-6590,-30019,40545
+2022-04-01,Feb 2022-Apr 2022,Total,London,Change on year,20100,number of people,32147,-93377,57924,56637
+2022-04-01,Feb 2022-Apr 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.8,75.1,20.9
+2022-04-01,Feb 2022-Apr 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.6,0.6
+2022-04-01,Feb 2022-Apr 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.8,0.7,0.8
+2022-05-01,Mar 2022-May 2022,Total,London,Level,20100,number of people,7235531,234491,4633903,1274331
+2022-05-01,Mar 2022-May 2022,Total,London,Change on quarter,20100,number of people,7993,2372,-14961,16974
+2022-05-01,Mar 2022-May 2022,Total,London,Change on year,20100,number of people,30176,-95761,66645,39120
+2022-05-01,Mar 2022-May 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,75.4,20.7
+2022-05-01,Mar 2022-May 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,0,-0.3,0.3
+2022-05-01,Mar 2022-May 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.9,0.8,0.6
+2022-06-01,Apr 2022-Jun 2022,Total,London,Level,20100,number of people,7237907,230293,4606173,1309893
+2022-06-01,Apr 2022-Jun 2022,Total,London,Change on quarter,20100,number of people,7327,-6333,-12643,18587
+2022-06-01,Apr 2022-Jun 2022,Total,London,Change on year,20100,number of people,28033,-90846,24388,76327
+2022-06-01,Apr 2022-Jun 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.6,74.9,21.3
+2022-06-01,Apr 2022-Jun 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.1,-0.3,0.3
+2022-06-01,Apr 2022-Jun 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.8,0.1,1.2
+2022-07-01,May 2022-Jul 2022,Total,London,Level,20100,number of people,7247868,212389,4605108,1335028
+2022-07-01,May 2022-Jul 2022,Total,London,Change on quarter,20100,number of people,15863,-32516,-10451,52405
+2022-07-01,May 2022-Jul 2022,Total,London,Change on year,20100,number of people,26047,-94002,8872,90958
+2022-07-01,May 2022-Jul 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4.2,74.8,21.7
+2022-07-01,May 2022-Jul 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,-0.3,0.8
+2022-07-01,May 2022-Jul 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.8,-0.1,1.4
+2022-08-01,Jun 2022-Aug 2022,Total,London,Level,20100,number of people,7252465,201432,4626064,1333704
+2022-08-01,Jun 2022-Aug 2022,Total,London,Change on quarter,20100,number of people,16934,-33059,-7839,59373
+2022-08-01,Jun 2022-Aug 2022,Total,London,Change on year,20100,number of people,26019,-90954,22762,83795
+2022-08-01,Jun 2022-Aug 2022,Total,London,Level,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,4,75.1,21.7
+2022-08-01,Jun 2022-Aug 2022,Total,London,Change on quarter,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-0.6,-0.3,0.9
+2022-08-01,Jun 2022-Aug 2022,Total,London,Change on year,20207,Unemployment rates use employment plus unemployment as a denominator; all other rates use population levels as a denominator.,,-1.7,0.1,1.3

@@ -1,0 +1,1558 @@
+---
+title:  "<br> Online Job Postings - quarterly update"
+date: "`r format(Sys.Date(),'%B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    css:  !expr "here::here('FORMATTING','GLAstyle.css')"
+    includes:
+      in_header: !expr "here::here('FORMATTING','favicon.html')"
+      before_body: !expr "here::here('FORMATTING','header.html')"
+      after_body: !expr "here::here('FORMATTING','footer.html')"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+knitr::opts_chunk$set(echo = TRUE,scipen=999)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+
+```
+
+```{r all data, include = FALSE}
+
+  
+  ################################################################################ 
+  # 02. SETTINGS
+  ################################################################################  
+  
+  # Version of GLA theme for charting
+  gla_theme_type <- "default"
+  theme_set(theme_gla(gla_theme = gla_theme_type))
+  
+  
+  
+```
+<br/>
+
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+Contact: [Ammar Ljubijankic Kutasi](mailto:ammar.ljubijankic@london.gov.uk)
+
+::: {.quotebox .quote_symbol}
+Following a sharp increase in online job posting numbers since the end of 2021, we are now seeing a similarly steep decrease in postings for jobs in London.
+<br><br>
+With the unemployment rate in London at a record low, the decline in job postings could begin to ease concerns that the labour market is too tight for firms to find the workers they need. One measure of labour market tightness, the ratio of job postings to unemployed Londoners, has begun to fall.
+<br><br>
+Job posting numbers have fallen across occupational groups since peaking in March 2022. However, there are still more postings for jobs in higher-skilled occupations.
+:::
+
+
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+<br/>
+
+## Introduction
+<br/>
+
+This update is based on online job postings data provided by [Lightcast (formerly Emsi Burning Glass)](https://www.economicmodeling.com/data/). It looks at online postings for jobs in London, including detail on information within postings (e.g. occupations, salary level and job location). 
+
+The number of online job postings over time is an indicator of the demand for labour, as well as the quality of skills matches in the labour market. Used together with traditional sources, it can (for example) be used to help to support the planning and delivery of skills provision and careers information, advice and guidance.
+
+::: {.infobox .caution_symbol}
+
+The number of online job postings is presented as unique, deduplicated monthly postings. However, online job postings data is subject to revision and not all jobs adverts are posted online. It is unlikely to present the full picture for job openings in London. For more information see: [Understanding online job postings data](https://data.london.gov.uk/download/job-postings-analyses/bc5fa2a4-44be-41bf-8e6e-c5d866519d80/Understanding%20online%20job%20postings%20data%20-%20July%202022.html).
+
+:::
+
+<br/>
+
+More data on London's labour market can be found on the [London Datastore](https://data.london.gov.uk/dataset/gla-economics-covid-19-labour-market-analysis).
+
+
+<a href="#top">Back to top</a>
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+``` {r total_sum_data,echo=FALSE}
+
+max_ave_post <- value_form(postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="three_mon_ave") %>% 
+  filter(measure_value==max(measure_value,na.rm = TRUE)) %>% 
+  pull(measure_value),s=3)
+
+max_ave_post_date <- postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="three_mon_ave") %>% 
+  filter(measure_value==max(measure_value,na.rm = TRUE)) %>% 
+  pull(date_month)
+
+max_post <- value_form(postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="job_postings") %>% 
+  filter(measure_value==max(measure_value,na.rm = TRUE)) %>% 
+  pull(measure_value),s=3)
+
+max_post_date <- postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="job_postings") %>% 
+  filter(measure_value==max(measure_value,na.rm = TRUE)) %>% 
+  pull(date_month)
+
+min_post <- value_form(postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="job_postings") %>% 
+  filter(measure_value==min(measure_value,na.rm = TRUE)) %>% 
+  pull(measure_value),s=3)
+
+min_post_date <- postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="job_postings") %>% 
+  filter(measure_value==min(measure_value,na.rm = TRUE)) %>% 
+  pull(date_month)
+
+last_month_post <- value_form(postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="job_postings") %>% 
+  filter(date_day==max(date_day)) %>% 
+  pull(measure_value),s=3)
+
+last_ave_month_post <- value_form(postings_soc_full_long %>% 
+  filter(soc_level==0 & measure_name=="three_mon_ave") %>% 
+  filter(date_day==max(date_day)) %>% 
+  pull(measure_value),s=3)
+
+```
+
+## Total online job postings
+<br/>
+
+The chart below shows the number of unique online postings for jobs in London. Given the volatility associated with single-month estimates, the three-month average estimates are likely to provide a more reliable indication of short-term changes in the demand for labour. 
+
+* The three-month average number of online postings climbed rapidly in early 2022 to reach 195,000 in the three months to May 2022, very close to the peak of `r max_ave_post` in the three months to `r max_ave_post_date`. 
+
+* As discussed below, the online job postings measure align with [several ONS indicators](https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/articles/alternativemeasuresofunderutilisationintheuklabourmarket/2022-09-05) which showed a tight UK labour market in early 2022, as vacancies were high while unemployment levels were decreasing.
+
+* The number of online job postings decreased just as rapidly over the summer of 2022. There were `r last_month_post` online postings for jobs in London in `r last_month_form` (single-month estimate). However, the level remained far higher than the post-COVID-19 low of `r min_post` recorded in `r min_post_date`. 
+
+<a href="#top">Back to top</a>
+
+``` {r trend_lon_chart, echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+
+#...............................................................................
+# Trend line for overall postings in London
+#...............................................................................
+
+chart_name <- paste0("london_trend")
+pal <- gla_pal(palette_type = "highlight",n=c(1,1))
+emp_names <- c("Three-month moving average","Monthly")
+pal_named <- setNames(object=pal,nm=emp_names)
+group_order <- c("Three-month moving average","Monthly")
+
+trend_chart <- postings_soc_full_long %>% 
+  filter(soc_level==0) %>% 
+  arrange(match(measure_name,levels(c("three_mon_ave","six_mon_ave","job_postings")))) %>% 
+  filter(measure_name %in% c("job_postings","three_mon_ave")) %>% 
+  ggplot(mapping = aes()) +
+  geom_point( #trick to make date appear separately and only once
+    show.legend = FALSE,
+    aes(x = date_day, 
+        y = 0 ,
+        group="1",
+        text = paste0(
+          format(date_day,"%B %Y"))),
+      colour=NA) + 
+  ggla_line(aes(x = date_day, y = measure_value,
+                group = factor(measure_name_clean,levels=(group_order)),
+                text = paste0(measure_name_clean,": ",value_form(measure_value,s=3)),
+                colour = factor(measure_name_clean,levels=(group_order))),
+            size = 1 * mm_to_pt)+
+  ggla_axisat0()+
+  scale_colour_manual(values = pal_named)+
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off') +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
+  labs(title = paste0("Online postings for jobs in London"),
+       subtitle = paste0("Unique monthly online job postings to ",last_month_form),
+       caption = "Source: Lightcast data, non-seasonally adjusted.") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+
+
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC)
+
+# Plotly
+LMU_plotly_settings(ch_name = trend_chart,
+                      title_text = 'paste0("Online postings for jobs in London")',
+                      subtitle_text = 'paste0("Unique monthly job postings to ",last_month_form)',
+                      hover_mode = "x unified") 
+
+figcap <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: non-seasonally adjusted. March 2020 indicated by dotted line.")
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+## Comparison of data providers
+
+Trends in online job postings from Lightcast correlate well with similar data published by Indeed and the Office for National Statistics (ONS)*. Data from Lightcast nevertheless appears to be more volatile. 
+
+*  Data from each of these sources show a very sharp drop in job posting levels of around 50%-60% after March 2020, followed by a gradual increase through 2020 and 2021.
+
+*  Online job postings from Indeed and ONS stabilised before reaching a level almost 50% higher than the March 2020 level, while Lightcast data show additional troughs and peaks occcuring in late 2021 and early 2022.
+
+<foot> *[Indeed](https://www.hiringlab.org/uk/blog/2022/06/09/real-time-job-posting-data-for-the-uk-labour-market/) records the number of job postings on its website. ONS sources data from [Adzuna](https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/onlinejobadvertestimates) which is an aggregator of online job postings.  <foot> 
+
+
+<a href="#top">Back to top</a>
+
+``` {r ons_indeed_lightcast, echo=FALSE,fig.cap = figcap_comp, out.width='100%'}
+
+
+#...............................................................................
+# Trend line for overall postings in London
+#...............................................................................
+
+chart_name <- paste0("comp_sources_chart")
+pal <- gla_pal(palette_type = "categorical",n=3)
+cat_names <- c("Lightcast","ONS estimated job adverts","Indeed")
+pal_named <- setNames(object=pal,nm=cat_names)
+
+comp_sources_chart <- ons_indeed_postings %>% 
+  filter(between(date_day,"2020-01-01",last_month_date)) %>% 
+  ggplot(mapping = aes()) +
+  geom_point( #trick to make date appear separately and only once
+    show.legend = FALSE,
+    aes(x = date_day, 
+        y = 0 ,
+        group="1",
+        text = paste0(
+          format(date_day,"%B %Y"))),
+      colour=NA) + 
+  ggla_line(aes(x = date_day, y = measure_value,
+                group = factor(measure_name_clean,levels=(cat_names)),
+                text = paste0(measure_name_clean,": ",value_form(measure_value,s=3,d=0)),
+                colour = factor(measure_name_clean,levels=(cat_names))),
+            size = 1 * mm_to_pt)+
+  ggla_axisat0()+
+  scale_colour_manual(values = pal_named)+
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off') +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
+  labs(title = paste0("Comparison of job postings data, London"),
+       subtitle = paste0("Data to ",last_month_form,", indexed (March 2020=100)"),
+       caption = paste0("Source: Lightcast (monthly online job postings, non-seasonally adjusted), Indeed (average of daily online job postings), ONS (average of weekly online job adverts, non-seasonally adjusted).","\n",
+                        "Note: March 2020 indicated by dotted line.")) +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+
+
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC)
+
+# Plotly
+LMU_plotly_settings(ch_name = comp_sources_chart,
+                      title_text = 'paste0("Comparison of job postings data, London")',
+                      subtitle_text = 'paste0("Data to ",last_month_form,", indexed (March 2020=100)")',
+                      hover_mode = "x unified") 
+
+figcap_comp <- paste0("Source: Lightcast (monthly online job postings, non-seasonally adjusted), Indeed (average of daily online job postings), ONS (average of weekly online job adverts, non-seasonally adjusted).","<br>","<br>", "Note: March 2020 indicated by dotted line.")
+
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+## Vacancies and unemployment {.tabset}
+<br/>
+
+``` {r, echo=FALSE}
+ave_tightness <- mean(lfs_postings_stats %>% 
+  filter(measure_name=="postings_unemp_3m_ratio" & between(date_day,"2014-01-01","2020-02-01")) %>% 
+  pull(measure_value))
+
+```
+
+Comparing the level of job vacancies (or online job postings) with unemployment can be used to assess the status of the labour market. It is said to be 'tight' if vacant jobs are plentiful and available workers are scarce. If the opposite is true, the labour market is instead characterised as 'loose'.
+
+The charts below compare the three-month rolling average of online jobs postings to the number of unemployed people in London since 2014.
+
+*  Between 2014 and March 2020, the average ratio of job postings to unemployed Londoners was `r value_form(ave_tightness,d=2)`. During this period, the ratio peaked at 0.83 in the middle of 2017.
+
+*  With the onset of the COVID-19 pandemic, unemployment rose while job postings declined. This led to a sharp drop in the ratio of postings to unemployed Londoners to 0.25.
+
+*  Unemployment then began decreasing quickly in 2021 as the number of job postings grew. The increase in the ratio continued into 2022, reaching a peak of around 0.84 in the summer of 2022 before falling slightly. The ratio nevertheless remained at a very high level.
+
+
+<a href="#top">Back to top</a>
+
+
+### Ratio between job postings and unemployment
+
+``` {r lfs_postings_ratio, echo=FALSE,fig.cap = figcap_ons, out.width='100%'}
+
+  
+  #...............................................................................
+  # Trend line for overall postings in London
+  #...............................................................................
+  
+  chart_name <- paste0("london_unemp_ratio")
+  pal <- gla_pal(palette_type = "categorical",n=1)
+  cat_names <- c("Online job postings per unemployed person (16+)")
+  pal_named <- setNames(object=pal,nm=cat_names)
+  group_order <- c("Online job postings per unemployed person (16+)")
+
+  # Chart  
+  london_unemp_ratio <- lfs_postings_stats %>%
+    filter(measure_name_clean %in% cat_names & between(date_day,"2014-01-01",lfs_latest_date)) %>%
+    group_by(measure_name_clean) %>%
+    ggplot(mapping = aes()) +
+    ggla_line(aes(x = date_day, y = measure_value,
+                  group = measure_name_clean,
+                  text = paste0(date_name,"\n",
+                                measure_name_clean,": ",value_form(measure_value,s=3,d=2)),
+                  colour = measure_name_clean),
+              size = 1 * mm_to_pt)+
+  ggla_axisat0()+
+    scale_colour_manual(values = pal_named)+
+    geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+               linetype = "dotted",
+               size = 1 * mm_to_pt,
+               colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+    coord_cartesian(clip = 'off') +
+    scale_y_continuous(labels = comma_format()) +
+    scale_x_date(date_labels = "%b '%y",date_breaks = "1 year") +
+    labs(title = paste0("Ratio of online job postings to unemployment, London"),
+         subtitle = paste0("Data to ",format(lfs_latest_date,"%B %Y"),", three-month moving average and unemployment level"),
+         caption = "Source: Lightcast data, non-seasonally adjusted; ONS Labour Force Survey.") +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"),
+          plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+          legend.position = "none")
+  
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+  
+  # Plotly
+  
+  LMU_plotly_settings(ch_name = london_unemp_ratio,
+                      title_text = 'paste0("Ratio of online job postings to unemployment, London")',
+                      subtitle_text = 'paste0("Data to ",format(lfs_latest_date,"%B %Y"),", three-month moving average and unemployment level")',
+                      hover_mode = "closest") %>% 
+    hide_legend()
+  
+  figcap_ons <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),", non-seasonally adjusted; ONS Labour Force Survey.","<br>","<br>", "Note: March 2020 indicated by dotted line.")
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+### Level of job postings and unemployment
+
+``` {r lfs_postings_chart, echo=FALSE,fig.cap = figcap_ons, out.width='100%'}
+
+  
+  #...............................................................................
+  # Trend line for overall postings in London
+  #...............................................................................
+  
+  chart_name <- paste0("london_lfs_postings")
+  pal <- gla_pal(palette_type = "categorical",n=2)
+  cat_names <- c("Three-month average job postings","Unemployed people (16+)")
+  pal_named <- setNames(object=pal,nm=cat_names)
+  group_order <- c("Three-month average job postings","Unemployed people (16+)")
+
+  # Chart  
+  london_lfs_postings_line <- lfs_postings_stats %>%
+    filter(measure_name_clean %in% cat_names & between(date_day,"2014-01-01",lfs_latest_date)) %>%
+    group_by(measure_name_clean) %>%
+    ggplot(mapping = aes()) +
+    geom_point( #trick to make date appear separately and only once
+      show.legend = FALSE,
+      aes(x = date_day,
+          y = 0 ,
+          group="1",
+          text = paste0(date_name)),
+      colour=NA) +
+    ggla_line(aes(x = date_day, y = measure_value,
+                  group = measure_name_clean,
+                  text = paste0(measure_name_clean,": ",value_form(measure_value,s=3)),
+                  colour = measure_name_clean),
+              size = 1 * mm_to_pt)+
+  ggla_axisat0()+
+    scale_colour_manual(values = pal_named)+
+    geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+               linetype = "dotted",
+               size = 1 * mm_to_pt,
+               colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+    coord_cartesian(clip = 'off') +
+    scale_y_continuous(labels = comma_format()) +
+    scale_x_date(date_labels = "%b '%y",date_breaks = "1 year") +
+    labs(title = paste0("Online job postings and unemployment levels, London"),
+         subtitle = paste0("Data to ",format(lfs_latest_date,"%B %Y"),", three-month moving average and unemployment level"),
+         caption = "Source: Lightcast data, non-seasonally adjusted; ONS Labour Force Survey.") +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"),
+          plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=10,h=8)
+  
+  # Plotly
+  
+  LMU_plotly_settings(ch_name = london_lfs_postings_line,
+                      title_text = 'paste0("Online job postings and unemployment levels, London")',
+                      subtitle_text = 'paste0("Data to ",format(lfs_latest_date,"%B %Y"),", three-month moving average and unemployment level")',
+                      hover_mode = "x unified")
+
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+``` {r paye_jobs_chart, echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+# 
+# #...............................................................................
+# # Trend line for overall postings in London
+# #...............................................................................
+# 
+# chart_name <- paste0("london_paye_jobs")
+# pal <- gla_pal(palette_type = "categorical",n=2)
+# cat_names <- c("Payrolled employees","Online job postings")
+# pal_named <- setNames(object=pal,nm=cat_names)
+# group_order <- c("Payrolled employees","Online job postings")
+# 
+# london_paye_jobs <- paye_postings_index %>% 
+#   filter(measure_name_clean %in% cat_names & between(date_day,"2018-01-01",last_month_date)) %>% 
+#   mutate(measure_value = case_when(measure_name=="index_mar20_emps" ~ (measure_value-75)*4,                                   TRUE ~ measure_value))%>% 
+#   group_by(measure_name_clean)%>% 
+#   ggplot(mapping = aes()) +
+#   geom_point( #trick to make date appear separately and only once
+#     show.legend = FALSE,
+#     aes(x = date_day, 
+#         y = 0 ,
+#         group="1",
+#         text = paste0(format(date_day,"%B %Y"))),
+#       colour=NA) + 
+#   ggla_line(aes(x = date_day, y = measure_value,
+#                 group = factor(measure_name_clean,levels=(group_order)),
+#                 text = paste0(measure_name_clean,": ",value_form(measure_value,s=3)),
+#                 colour = factor(measure_name_clean,levels=(group_order))),
+#             size = 1 * mm_to_pt)+
+#   scale_colour_manual(values = pal_named)+
+#   geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+#              linetype = "dotted",
+#              size = 1 * mm_to_pt,
+#              colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+#   coord_cartesian(clip = 'off') +
+#   scale_y_continuous(labels = comma_format(),
+#                      sec.axis = sec_axis(trans= ~./4 + 75)) +
+#   scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
+#   labs(title = paste0("Online job postings and payrolled employees, London"),
+#        subtitle = paste0("Data to ",last_month_form,", indexed (March 2020 = 100)"),
+#        caption = "Source: Lightcast data, non-seasonally adjusted.") +
+#   theme(plot.margin = unit(c(1,1,1,1), "cm"),
+#         plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+# 
+  
+  # Save
+  # save_GLA_plot(chart_name)
+  # save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+#   
+# # Plotly
+# LMU_plotly_settings(ch_name = london_paye_jobs,
+#                       title_text = 'paste0("Online job postings and payrolled employees, London")',
+#                       subtitle_text = 'paste0("Data to ",last_month_form,", indexed (March 2020 = 100)")',
+#                       hover_mode = "x unified") 
+# 
+# figcap <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),", HMRC.","<br>","<br>", "Note: non-seasonally adjusted. March 2020 indicated by dotted line.")
+
+```
+
+
+
+
+
+``` {r, occ_trend stats, echo=FALSE}
+
+# General stats for salary change
+
+lon_occ_max_p_mar20_latest <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(index_mar20_postings))-100
+
+lon_occ_max_p_mar20_latest_soc <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(soc_name))
+
+# Find max overall, not just latest date
+
+lon_occ_max_p_mar20 <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day>as.Date("2020-03-01")) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(index_mar20_postings))-100
+
+lon_occ_max_p_mar20_soc <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day>as.Date("2020-03-01")) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(soc_name))
+
+lon_occ_max_p_mar20_date <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day>as.Date("2020-03-01")) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(date_day))
+
+# Min
+
+lon_occ_min_p_mar20_latest <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_postings==min(index_mar20_postings)) %>% 
+  pull(index_mar20_postings))-100
+
+lon_occ_min_p_mar20_latest_soc <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_postings==min(index_mar20_postings)) %>% 
+  pull(soc_name))
+
+# Find max change at lower SOC level
+
+lon_occ_max_p_mar20_soc4 <- (postings_soc_full %>% 
+  filter(soc_level==4 & date_day==max(date_day) & job_postings>1000) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(index_mar20_postings))-100
+
+lon_occ_max_p_mar20_soc4_nm <- (postings_soc_full %>% 
+  filter(soc_level==4 & date_day==max(date_day) & job_postings>1000) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(soc_name))
+
+# The below is no longer useful as all occs have seen growth. Consider changing dates
+count_occ_post_growth_jan18 <- length(postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_jan18_postings>100) %>% 
+  pull(soc_name))
+
+```
+
+## Occupational groups {.tabset}
+<br/>
+
+
+### Trends in the number of online postings
+<br/>
+
+Online job postings trends in most occupational groups reflect the overall London picture. After increases in the first half of 2022, postings declined in more recent months.
+
+* The major occupation group with the largest rate of increase in the post-pandemic period was `r lon_occ_max_p_mar20_soc` with an increase of `r perc_form(lon_occ_max_p_mar20)`% from March 2020 to `r format(lon_occ_max_p_mar20_date, "%B %Y")`. 
+
+* By `r last_month_form`, the change from March 2020 had reduced to `r perc_form(lon_occ_max_p_mar20_latest)`%, though it was still the highest growth among occupation groups. `r lon_occ_min_p_mar20_latest_soc` saw the lowest growth at `r perc_form(lon_occ_min_p_mar20_latest)`%.
+
+* Among four-digit SOC occupations (with more than 1,000 job postings), `r lon_occ_max_p_mar20_soc4_nm` recorded the highest growth rate from March 2020 to `r last_month_form` at `r perc_form(lon_occ_max_p_mar20_soc4)`%.
+
+<a href="#top">Back to top</a>
+
+
+``` {r facet_ind_posts,echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+#.............................................................................
+# Facetted charts on salary index using all SOC
+#.............................................................................
+
+
+pal_named <- c("London"=gla_pal(n=1))
+
+scale_size <- c("London"= 1* mm_to_pt)
+
+chart_name <- paste0("fac_ind_post")
+
+# Produce chart
+ind_post_facet <- postings_soc_full %>% 
+  filter(soc_level==1 & date_day>="2018-01-01") %>% 
+  ggplot(mapping = aes(text = paste(
+    format(date_day,"%b-%Y"), "\n",
+    "Index: ", value_form(index_mar20_postings,s=4,d=1),"\n",
+    sep = ""))) +
+  ggla_line(aes(x = date_day,
+                y = index_mar20_postings, 
+                group = geography_name,
+                colour = geography_name,
+                size = geography_name)) +
+  facet_wrap( ~ factor(soc_name_short, level=soc_names_vector), ncol=3, scales="free")    +
+  scale_colour_manual(values = pal_named) +
+  scale_size_manual(values = scale_size) +
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off',
+                  ylim=c(30, 300)) +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "'%y",date_breaks = "1 year" ) +
+  theme() %>% 
+  labs(title = paste0("Monthly job postings by SOC major group in London"),
+       subtitle = paste0("Unique monthly online job postings to ",last_month_form,", indexed (March 2020 = 100)"),
+       caption = "Source: Lightcast") +
+  theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        plot.margin = unit(c(1,1,1,1), "cm"),
+        panel.spacing = unit(1,"lines"),
+        legend.position = "none")
+
+#salary_facet
+
+    # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+
+## There are some bugs with using ggplotly and ggla with facets. The below corrects the domain ranges.
+# Custom function to correct the facet chart placements
+correct_facets <- function(chart,max_fac_num=9) {
+  
+  chart_temp <- chart
+  for (fac_num in 1:max_fac_num) {
+    
+    # Assign axes names
+    if(fac_num==1) {
+      xaxis_name <- "xaxis"
+      yaxis_name <- "yaxis"
+    }          else {
+      xaxis_name <- paste0("xaxis",fac_num)
+      yaxis_name <- paste0("yaxis",fac_num)
+    }
+    
+    # Manually position axes and chart titles
+    if (fac_num %in% c(1,4,7)) {
+      xdom <- c(0,0.28)
+    }          else if (fac_num %in% c(2,5,8)) {
+      xdom <- c(0.35,0.63)
+    }          else if (fac_num %in% c(3,6,9)) {
+      xdom <- c(0.72,1)
+    }
+    if (fac_num %in% c(1,2,3)) {
+      y_annot <- 1
+      ydom <- c(0.73,0.99)
+    }          else if (fac_num %in% c(4,5,6)) {
+      y_annot <- 0.64
+      ydom <- c(0.38,0.64)
+    }        else if (fac_num %in% c(7,8,9)) {
+      y_annot <- 0.29
+      ydom <- c(0.03,0.29)
+    }
+    
+    # Replace attributes
+    chart_temp[['x']][['layout']][['annotations']][[fac_num]][['font']][['family']] <-"Arial"
+    chart_temp[["x"]][["layout"]][["annotations"]][[fac_num]][["y"]] <- y_annot
+    
+    chart_temp[["x"]][["layout"]][[xaxis_name]][["domain"]] <- xdom
+    chart_temp[["x"]][["layout"]][[xaxis_name]][["tickfont"]][["family"]]<- "Arial"
+    chart_temp[["x"]][["layout"]][[xaxis_name]][["tickfont"]][["color"]] <- "#666666"
+    chart_temp[["x"]][["layout"]][[xaxis_name]][["tickfont"]][["size"]] <- 13
+    
+    chart_temp[["x"]][["layout"]][[yaxis_name]][["domain"]] <- ydom
+    chart_temp[["x"]][["layout"]][[yaxis_name]][["tickfont"]][["family"]]<- "Arial"
+    chart_temp[["x"]][["layout"]][[yaxis_name]][["tickfont"]][["color"]] <- "#666666"
+    chart_temp[["x"]][["layout"]][[yaxis_name]][["tickfont"]][["size"]] <- 13
+    
+  }
+  
+  chart <<- chart_temp
+}
+
+# The actual plot
+ggplotly(ind_post_facet,tooltip = "text")    %>% 
+  ggla_plotly_settings() %>% 
+  layout(title = list(text = paste0("<b>","Monthly job postings by SOC major group in London","</b>",
+                                    "<br>",
+                                    "<sup>",
+                                    paste0("Unique monthly online job postings to ",last_month_form,", indexed (March 2020 = 100)"),
+                                    "</sup>",
+                                    "<br>"),
+                      font = list(size = 22),
+                      y = .95, xref = "plot"),
+         xaxis = list(tickfont = list(size = 13)),
+         yaxis = list(tickfont = list(size = 13)),
+         legend = list(font = list(size = 15),title=list(text="")),
+         hovermode = "closest") %>% 
+  plotly_modebar() %>%  
+  correct_facets(max_fac_num = 9) %>% 
+  hide_legend()
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+``` {r, salaries stats, echo=FALSE}
+
+# General stats for salary change
+lon_salary_latest <- value_form(pull_dtpt(dt=postings_soc_full,flt='soc_code==0 & date_day==max(date_day)',vr="median_salary"),s=3)
+
+lon_salary_p_mar20 <- 100*(pull_dtpt(dt=postings_soc_full,flt='soc_code==0 & date_day==max(date_day)',vr="median_salary")/
+  pull_dtpt(dt=postings_soc_full,flt='soc_code==0 & date_day=="2020-03-01"',vr="median_salary")-1)
+
+lon_salary_p_jan18 <- 100*(pull_dtpt(dt=postings_soc_full,flt='soc_code==0 & date_day==max(date_day)',vr="median_salary")/
+  pull_dtpt(dt=postings_soc_full,flt='soc_code==0 & date_day=="2018-01-01"',vr="median_salary")-1)
+
+lon_salary_p_yoy <- (pull_dtpt(dt=postings_soc_full,flt='soc_code==0 & date_day==max(date_day)',vr="change_p_yoy_salary"))
+
+lon_salary_occ_max_p_mar20 <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_salary==max(index_mar20_salary)) %>% 
+  pull(index_mar20_salary))-100
+
+lon_salary_occ_max_p_mar20_soc <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_salary==max(index_mar20_salary)) %>% 
+  pull(soc_name))
+
+lon_salary_occ_min_p_mar20 <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_salary==min(index_mar20_salary)) %>% 
+  pull(index_mar20_salary))-100
+
+lon_salary_occ_min_p_mar20_soc <- (postings_soc_full %>% 
+  filter(soc_level==1 & date_day==max(date_day)) %>% 
+  filter(index_mar20_salary==min(index_mar20_salary)) %>% 
+  pull(soc_name))
+
+# Occupation specific
+lon_salary_occ_operatives_yoy <- 100*(
+  pull_dtpt(postings_soc_full,flt='soc_level==1 & soc_name_short=="Operatives" & date_day==max(date_day)',vr="median_salary")/
+  pull_dtpt(postings_soc_full,flt='soc_level==1 & soc_name_short=="Operatives" & date_day==max(date_day-years(1))',vr="median_salary")-1)
+
+lon_salary_occ_elementary_yoy <- 100*(
+  pull_dtpt(postings_soc_full,flt='soc_level==1 & soc_name_short=="Elementary" & date_day==max(date_day)',vr="median_salary")/
+  pull_dtpt(postings_soc_full,flt='soc_level==1 & soc_name_short=="Elementary" & date_day==max(date_day-years(1))',vr="median_salary")-1)
+
+
+
+```
+
+
+``` {r facet_ind_salaries,echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+#.............................................................................
+# Facetted charts on salary index using all SOC
+#.............................................................................
+
+
+pal_named <- c("London"=gla_pal(n=1))
+
+scale_size <- c("London"= 1* mm_to_pt)
+
+chart_name <- paste0("fac_salary")
+
+# Produce chart
+salary_facet <- postings_soc_full %>% 
+  filter(soc_level==1 & date_day>="2018-01-01") %>% 
+  ggplot(mapping = aes(text = paste(
+    date_day, "\n",
+    "Index: ", value_form(index_mar20_salary,s=4,d=1),"\n",
+    sep = ""))) +
+  ggla_line(aes(x = date_day,
+                y = index_mar20_salary, 
+                group = geography_name,
+                colour = geography_name,
+                size = geography_name)) +
+  facet_wrap( ~ factor(soc_name_short, level=soc_names_vector), ncol=3, scales="free")    +
+  scale_colour_manual(values = pal_named) +
+  scale_size_manual(values = scale_size) +
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off',
+                  ylim=c(80, 120)) +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "'%y",date_breaks = "1 year" ) +
+  theme() %>% 
+  labs(title = paste0("Median advertised salary by SOC major group in London"),
+       subtitle = paste0("Monthly salaries from online job postings to ",last_month_form,", indexed (March 2020 = 100)"),
+       caption = "Source: Lightcast") +
+  theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        plot.margin = unit(c(1,1,1,1), "cm"),
+        panel.spacing = unit(1,"lines"),
+        legend.position = "none")
+
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+  
+# 
+# # The actual plot
+# ggplotly(salary_facet,tooltip = "text")    %>% 
+#   ggla_plotly_settings() %>% 
+#   layout(title = list(text = paste0("<b>","Median advertised salary by SOC major group in London","</b>",
+#                                     "<br>",
+#                                     "<sup>",
+#                                     paste0("Monthly salaries from online job postings to ",last_month_form,", indexed (March 2020 = 100)"),
+#                                     "</sup>",
+#                                     "<br>"),
+#                       font = list(size = 22),
+#                       y = .95, xref = "plot"),
+#          xaxis = list(tickfont = list(size = 13)),
+#          yaxis = list(tickfont = list(size = 13)),
+#          legend = list(font = list(size = 15),title=list(text="")),
+#          hovermode = "closest") %>% 
+#   plotly_modebar() %>%  
+#   correct_facets(max_fac_num = 9) %>% 
+#   hide_legend()
+
+```
+
+
+### Trends in advertised salaries
+<br/>
+
+Some online job postings include information on wage levels (advertised salaries).*
+
+The trends in advertised salaries varied across major occupational groups, though all occupations saw a higher salary level in `r last_month_form` than in March 2020.<sup>†</sup>
+
+*  Associate Professional & Technical, Admin & Secretarial and Sales occupations recorded steep increases in advertised salaries following the onset of COVID-19. The advertised salaries in these groups then declined in late 2021, before recovering somewhat in 2022.
+
+* The largest increases in advertised salaries in 2022 were in jobs in the Process, Plant & Machine Operatives and Elementary groups, which by `r last_month_form` had increased by `r abs2(perc_form(lon_salary_occ_operatives_yoy))`% and `r abs2(perc_form(lon_salary_occ_elementary_yoy))`% on the previous year, respectively.
+
+*  Across all online job postings in London, the median advertised salary was estimated at £`r lon_salary_latest` in `r last_month_form`. This represents `r condi_text(lon_salary_p_yoy,"noun")` of `r abs2(perc_form(lon_salary_p_yoy))`% on the year and `r condi_text(lon_salary_p_jan18,"noun")` of `r abs2(perc_form(lon_salary_p_jan18))`% from January 2018.
+
+<a href="#top">Back to top</a>
+
+<foot>
+*Approximately half of all postings in London had salary information in 2021. <br/>
+<sup>†</sup>Salaries are expressed in nominal terms and are not adjusted for inflation.
+<foot>
+
+``` {r facet_ind_nom_salaries,echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+#.............................................................................
+# Facetted charts on salary index using all SOC
+#.............................................................................
+
+
+pal_named <- c("London"=gla_pal(n=1))
+
+scale_size <- c("London"= 1* mm_to_pt)
+
+chart_name <- paste0("salary_nominal_facet")
+
+# Set temporarily for flexible y-axes
+theme_set(theme_gla(gla_theme = gla_theme_type,
+                    free_y_facets = TRUE))
+
+# Produce chart
+salary_nominal_facet <- postings_soc_full %>% 
+  filter(soc_level==1 & date_day>="2018-01-01") %>% 
+  ggplot(mapping = aes(text = paste(
+    date_day, "\n",
+    "Level: £", value_form(median_salary,s=4,d=1),"\n",
+    sep = ""))) +
+  ggla_line(aes(x = date_day,
+                y = median_salary, 
+                group = geography_name,
+                colour = geography_name,
+                size = geography_name)) +
+  facet_wrap( ~ factor(soc_name_short, level=soc_names_vector), ncol=3, scales="free")    +
+  scale_colour_manual(values = pal_named) +
+  scale_size_manual(values = scale_size) +
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off') +
+  scale_y_continuous(labels = comma_format(prefix="£")) +
+  scale_x_date(date_labels = "'%y",date_breaks = "1 year" ) +
+  theme() %>% 
+  labs(title = paste0("Median advertised salary by SOC major group in London"),
+       subtitle = paste0("Monthly salaries from online job postings to ",last_month_form,", indexed (March 2020 = 100)"),
+       caption = "Source: Lightcast") +
+  theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        plot.margin = unit(c(1,1,1,1), "cm"),
+        panel.spacing = unit(1,"lines"),
+        legend.position = "none")
+
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+
+# The actual plot
+ggplotly(salary_nominal_facet,tooltip = "text")    %>% 
+  ggla_plotly_settings() %>% 
+  layout(title = list(text = paste0("<b>","Median advertised salary by SOC major group in London","</b>",
+                                    "<br>",
+                                    "<sup>",
+                                    paste0("Monthly salaries from online job postings to ",last_month_form),
+                                    "</sup>",
+                                    "<br>"),
+                      font = list(size = 22),
+                      y = .95, xref = "plot"),
+         xaxis = list(tickfont = list(size = 13)),
+         yaxis = list(tickfont = list(size = 13)),
+         legend = list(font = list(size = 15),title=list(text="")),
+         hovermode = "closest") %>% 
+  plotly_modebar() %>%  
+  correct_facets(max_fac_num = 9) %>% 
+  hide_legend()
+
+# Revert
+theme_set(theme_gla(gla_theme = gla_theme_type,
+                    free_y_facets = FALSE))
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+``` {r skill_stats, echo=FALSE}
+#Compare to peak in march 2022
+
+skill_1_mar22_p <- perc_form(  pull_dtpt(dt=postings_soc2_skill,flt = 'date_day==max(date_day) & skill_level=="Level 1"',vr="change_mar22_p"),d=0)
+
+skill_2_mar22_p <- perc_form(pull_dtpt(dt=postings_soc2_skill,flt = 'date_day==max(date_day) & skill_level=="Level 2"',vr="change_mar22_p"),d=0)
+
+skill_3_mar22_p <- perc_form(pull_dtpt(dt=postings_soc2_skill,flt = 'date_day==max(date_day) & skill_level=="Level 3"',vr="change_mar22_p"),d=0)
+
+skill_4_mar22_p <- perc_form(pull_dtpt(dt=postings_soc2_skill,flt = 'date_day==max(date_day) & skill_level=="Level 4"',vr="change_mar22_p"),d=0)
+
+```
+
+## Skill levels
+<br/>
+
+The ONS [has grouped](https://www.ons.gov.uk/methodology/classificationsandstandards/standardoccupationalclassificationsoc/soc2020/soc2020volume1structureanddescriptionsofunitgroups) all 2-digit occupations into one of four skill levels, with occupations at Level 4 requiring the longest time to acquire full competency.
+
+
+The number of online job postings varied significantly by skill level, with a higher number of postings for higher skilled jobs in London.
+
+The number of job postings peaked in March 2022 for most skill levels. From then to `r last_month_form`, the change in job postings were as follows:
+
+* Skill level 4 (e.g. health professionals): `r skill_4_mar22_p`%.
+* Skill level 3 (e.g. skilled construction trades): `r skill_3_mar22_p`%.
+* Skill level 2 (e.g. sales occupations): `r skill_2_mar22_p`%.
+* Skill level 1 (e.g. elementary service occupations): `r skill_1_mar22_p`%.
+
+
+<a href="#top">Back to top</a>
+
+``` {r trend_skill,echo=FALSE,fig.cap = figcap_skill, out.width='100%'}
+
+#.............................................................................
+# Skill levels
+#.............................................................................
+
+
+# Chart prep
+pal <- gla_pal(n=4)
+pal_named <- c("Level 1 (lowest)"=pal[1],"Level 2"=pal[2],"Level 3"=pal[3],"Level 4 (highest)"=pal[4])
+chart_name <- paste0("trend_skill")
+
+# Produce chart
+trend_skill <- postings_soc2_skill %>% 
+  mutate(skill_level_desc = case_when(skill_level=="Level 1" ~ "Level 1 (lowest)",
+                                      skill_level=="Level 4" ~ "Level 4 (highest)",
+                                      TRUE ~ skill_level)) %>% 
+  filter(date_day>="2018-01-01") %>% 
+  ggplot(mapping = aes()) + 
+  geom_point(data=~filter(.x,skill_level=="Level 1"), #trick to make date appear separately and only once
+             show.legend = FALSE,
+             aes(x = date_day, 
+                 y = 0 ,
+                 text = paste0(
+                   format(date_day,"%B %Y")," (% change from Mar '22)")),
+             colour=NA) + 
+  ggla_line(aes(x = date_day,
+                y = job_postings, 
+                group=skill_level_desc,
+                colour = skill_level_desc,
+                text = paste0(
+                  "Job postings (",skill_level,"): ", value_form(job_postings ,s=3,d=1)," (",perc_form(change_mar22_p,d=0),"%)")),
+            size=1* mm_to_pt,) +    
+  scale_colour_manual(values = pal_named) +
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+    geom_vline(aes(xintercept = as.numeric(ymd("2022-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark peaks
+  coord_cartesian(clip = 'off') +
+  ggla_axisat0() +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year" ) +
+  theme() %>% 
+  labs(title = paste0("Online job postings by ONS skill level"),
+       subtitle = paste0("Unique monthly online job postings to ",last_month_form),
+       caption = paste0("Source: Lightcast ",format(ym(last_month),"%Y"),"\n","\n", "Note: non-seasonally adjusted. March 2020 and March 2022 indicated by dotted lines.\nBased on 2-digit SOC codes.")) +
+  theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        plot.margin = unit(c(1,1,1,1), "cm"),
+        panel.spacing = unit(1,"lines"))
+
+  
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+
+# The actual plot
+LMU_plotly_settings(ch_name = trend_skill,
+                      title_text = 'paste0("Job postings by skill level")',
+                      subtitle_text = 'paste0("Unique monthly online job postings to ",last_month_form)',
+                      hover_mode = "x unified") 
+
+figcap_skill <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: non-seasonally adjusted. March 2020 and March 2022 indicated by dotted lines. Based on 2-digit SOC codes.")
+
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+``` {r top10 stats, echo=FALSE}
+
+# Subtract current month by 3 since current month is included
+recent_3m_period <- paste0(format(ym(last_month)-months(2),"%B %Y"),"-",last_month_form)
+
+threeyrs_3m_period <- paste0(format(ym(last_month)-years(3)-months(2),"%B %Y"),"-",format(ym(last_month)-years(3),"%B %Y"))
+
+```
+
+## Top 10 occupations {.tabset}
+<br/>
+
+### Sub-major occupation groups {.tabset}
+<br/>
+
+The table below shows the ten two-digit SOC codes with the highest number of unique new online job postings in the most recent three month period (`r recent_3m_period`). For comparison, it also shows the equivalent top ten in the same period three years ago (`r threeyrs_3m_period`).
+
+Despite changes in the economic context, the ranking of occupations in the two periods is similar and the top five occupational groups are the same. 
+
+<a href="#top">Back to top</a>
+
+#### `r recent_3m_period`
+
+``` {r top10_occs_soc2_now,echo=FALSE,fig.cap = tabcap2, out.width='100%'}
+
+#.............................................................................
+# Table with top 10
+#.............................................................................
+
+top_occs_table_func(top10_soc2_newquarter)
+
+tabcap2 <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: Number of unique new postings in period. Based on 2-digit SOC codes.")
+
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+#### `r threeyrs_3m_period`
+
+``` {r top10_occs_soc2_3yrs,echo=FALSE,fig.cap = tabcap2, out.width='100%'}
+
+#.............................................................................
+# Table with top 10
+#.............................................................................
+
+
+top_occs_table_func(top10_soc2_3yrs)
+
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+
+### Unit occupation groups {.tabset}
+<br/>
+
+The table below shows the ten four-digit SOC codes with the highest number of unique new online job postings in the most recent three month period (`r recent_3m_period`). It also shows the equivalent top ten in the same period three years ago for comparison (`r threeyrs_3m_period`).
+
+Despite changes in the economic context, the occupations listed are broadly similar. 
+
+<a href="#top">Back to top</a>
+
+#### `r recent_3m_period`
+
+``` {r top10_occs_soc4_now,echo=FALSE,fig.cap = tabcap4, out.width='100%'}
+
+#.............................................................................
+# Table with top 10
+#.............................................................................
+
+top_occs_table_func(top10_soc4_newquarter)
+
+tabcap4 <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: Number of unique new postings in period. Based on 4-digit SOC codes.")
+
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+#### `r threeyrs_3m_period`
+
+``` {r top10_occs_soc4_3yrs,echo=FALSE,fig.cap = tabcap4, out.width='100%'}
+
+#.............................................................................
+# Table with top 10
+#.............................................................................
+
+top_occs_table_func(top10_soc4_3yrs)
+
+```
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+
+## Job characteristics {.tabset}
+<br/>
+
+
+``` {r remote_sum_data,echo=FALSE}
+
+remote_share_peak <- perc_form(100*(postings_remote %>% 
+                                  filter(remote_posting==TRUE & geography_name=="London") %>% 
+                                 filter(remote_group_share==max(remote_group_share)) %>% 
+                                  pull(remote_group_share)))
+
+remote_share_peak_date <- format((postings_remote %>% 
+                                  filter(remote_posting==TRUE & geography_name=="London") %>% 
+                                 filter(remote_group_share==max(remote_group_share)) %>% 
+                                  pull(date_day)),"%B %Y")
+
+last_remote_count <- value_form(postings_remote %>% 
+                                  filter(remote_posting==TRUE & date_day==max(date_day) & geography_name=="London") %>% 
+                                  pull(job_postings))
+
+last_remote_share <- perc_form(100*(postings_remote %>% 
+                                      filter(remote_posting==TRUE & date_day==max(date_day) & geography_name=="London") %>% 
+                                      pull(remote_group_share)),d=1)
+
+```
+
+### Remote work
+
+<br/>
+
+The onset of the COVID-19 pandemic meant that more people started to work from home and that was reflected in the increasing share of job postings advertised as remote work from March 2020.
+
+Since then, the share of job postings advertised as offering remote working in London has remained relatively stable, peaking at `r remote_share_peak`% in `r remote_share_peak_date` and remained above 10% afterwards.
+
+
+<a href="#top">Back to top</a>
+
+``` {r trend_remote_chart, echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+
+#...............................................................................
+# Trend line for PT share in London
+#...............................................................................
+
+chart_name <- paste0("remote_trend")
+pal <- gla_pal(palette_type = "highlight",n=c(1,1))
+geo_names <- c("London","UK")
+pal_named <- setNames(object=pal,nm=geo_names)
+size_named <- setNames(object=c(2 * mm_to_pt,1 *mm_to_pt),nm=geo_names)
+
+
+trend_remote_chart <- postings_remote %>% 
+  filter(remote_posting==TRUE & date_day>="2018-01-01")%>% 
+  ggplot(mapping = aes(text = paste0(format(date_day,"%B %Y"),", ",geography_name,"\n",
+                                    "Postings: ", value_form(job_postings), "\n",
+                                    "Share of postings: ",perc_form(remote_group_share*100),"%"))) +
+  ggla_line(aes(x = date_day, y = remote_group_share, 
+                colour=geography_name,
+                group=geography_name,
+                size=geography_name)) +
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  scale_colour_manual(values=pal_named)+
+  scale_size_manual(values=size_named)+
+  coord_cartesian(clip = 'off') +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
+  ggla_axisat0() +
+  labs(title = paste0("Job postings share for remote work"),
+       subtitle = paste0("Unique monthly online job postings to ",last_month_form),
+       caption = "Source: Lightcast data, non-seasonally adjusted.") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+
+# Plotly
+LMU_plotly_settings(ch_name = trend_remote_chart,
+                      title_text = 'paste0("Job postings share for remote work")',
+                      subtitle_text = 'paste0("Unique monthly online job postings to ",last_month_form)',
+                      hover_mode = "x") 
+
+figcap <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: non-seasonally adjusted. March 2020 indicated by dotted line.")
+
+```
+
+``` {r, check_remote_ind, echo=FALSE}
+# Produce (but do not publish) chart showing remote work by industry
+
+chart_name <- paste0("comp_remote_soc")
+
+pal <- gla_pal(palette_type = "highlight",n=c(1,1))
+pal_named <- setNames(object=pal,nm = c("TRUE","FALSE"))
+
+comp_remote_soc <- postings_remote_socs %>% 
+  ggplot() + 
+  geom_bar(aes(x = soc_code , y = in_area_share, fill = remote_posting),
+           stat = 'identity', position = 'stack') +
+  facet_grid(~ geography_name)+
+  scale_fill_manual(aesthetics = "fill", values = pal_named) +
+  scale_y_continuous(expand = c(0, 0), labels = label_percent(suffix = "%")) +
+  ggla_axisat0() +
+  labs(title = paste0("Share of remote work by occupation, London vs. UK"),
+       subtitle = paste0("Share of total online job postings in area in ",last_month_form),
+       caption = "Source: Lightcast.") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)),
+        legend.position="right")
+
+ ggsave(here::here("OUTPUT","PLOTS",gsub(" ","_",paste0(chart_name,".png"))), device = "png", width = 8, height = 8, units = "in")
+
+
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+
+
+``` {r share_sum_data,echo=FALSE}
+
+ft_share <- perc_form(100*(ft_pt_postings_total %>% 
+  filter(soc_level==0 & emp_type_name=="Full-time" & date_day==max(date_day)) %>% 
+  pull(emp_type_share)),d=1)
+
+
+```
+
+### Flexible work/hours
+
+<br/>
+
+The chart below shows the long-term trend in the share of online job postings in London advertised with either part-time or flexible hours. While both have remained low over recent years, the share of postings with flexible hours appears to have increased to a higher level following the onset of the COVID-19 pandemic.
+
+
+<foot>*Not all online job postings include information on the number of hours required. When the information is not present, the posting is assumed to be for a full-time position. <foot>
+
+<a href="#top">Back to top</a>
+
+``` {r trend_fptp_chart, echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+
+#...............................................................................
+# Trend line for PT share in London
+#...............................................................................
+
+chart_name <- paste0("pt_trend")
+pal <- gla_pal(n=2)
+emp_names <- c("Part-time","Flexible hours")
+pal_named <- setNames(object=pal,nm=emp_names)
+
+trend_ftpt_chart <- ft_pt_postings_total %>% 
+  filter(soc_level==0 & emp_type_name %in% emp_names & date_day>="2018-01-01")%>% 
+  ggplot(mapping = aes(text = paste0(format(date_day,"%B %Y"),"\n",
+                                    "Share: ",perc_form(emp_type_share*100),"%"))) +
+  ggla_line(aes(x = date_day, y = emp_type_share,colour = emp_type_name, group=emp_type_name),
+            size = 1 * mm_to_pt)+
+  scale_colour_manual(values = pal_named)+
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  coord_cartesian(clip = 'off') +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
+  ggla_axisat0() +
+  labs(title = paste0("Online job postings share by employment type in London"),
+       subtitle = paste0("Unique monthly online job postings to ",last_month_form),
+       caption = "Source: Lightcast data, non-seasonally adjusted. Note: part-time week defined as 32 hours or less") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+
+# Plotly
+LMU_plotly_settings(ch_name = trend_ftpt_chart,
+                      title_text = 'paste0("Job postings share by employment type in London")',
+                      subtitle_text = 'paste0("Unique monthly online job postings to ",last_month_form)',
+                      hover_mode = "x") 
+
+figcap <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: non-seasonally adjusted. Full-time defined as at least 32 hours. March 2020 indicated by dotted line.")
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+
+``` {r regional data,echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+# Data for London
+lon_jan18_p <- perc_form(100*
+  (pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="London" & date_day==max(date_day)',vr="index_mar20_postings")/
+    pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="London" & date_day=="2018-01-01"',vr="index_mar20_postings")-
+    1),
+  d=0)
+
+lon_mar20_p <- perc_form(100*
+  (pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="London" & date_day==max(date_day)',vr="index_mar20_postings")/
+    pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="London" & date_day=="2020-03-01"',vr="index_mar20_postings")-
+    1),
+  d=0)
+
+# data for  UK
+lon_jan18_p <- perc_form(100*
+  (pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="UK" & date_day==max(date_day)',vr="index_mar20_postings")/
+    pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="UK" & date_day=="2018-01-01"',vr="index_mar20_postings")-
+    1),
+  d=0)
+
+uk_mar20_p <- perc_form(100*
+  (pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="UK" & date_day==max(date_day)',vr="index_mar20_postings")/
+    pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name=="UK" & date_day=="2020-03-01"',vr="index_mar20_postings")-
+    1),
+  d=0)
+
+
+# Data for max and min growth regions
+max_index_region <- uk_region_postings %>% filter(date_day==max(date_day)) %>% 
+  filter(index_mar20_postings==max(index_mar20_postings)) %>% 
+  pull(geography_name)
+
+min_region <- uk_region_postings %>% filter(date_day==max(date_day)) %>% 
+  filter(index_mar20_postings==min(index_mar20_postings)) %>% 
+  pull(geography_name)
+
+
+max_jan18_change <- perc_form(100*
+  (pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name==max_index_region & date_day==max(date_day)',vr="index_mar20_postings")/
+    pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name==max_index_region & date_day=="2018-01-01"',vr="index_mar20_postings")-
+    1),
+  d=0)
+
+max_mar20_change <- perc_form(100*
+  (pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name==max_index_region & date_day==max(date_day)',vr="index_mar20_postings")/
+    pull_dtpt(dt=uk_region_postings,flt='soc_level==0 & geography_name==max_index_region & date_day=="2020-03-01"',vr="index_mar20_postings")-
+    1),
+  d=0)
+
+
+```
+
+## Regional online job postings
+
+<br/>
+
+The fluctuations in the number of online job postings have been similar across regions. Relative to March 2020 levels: 
+
+*  The level of job postings in the UK overall peaked in November 2021, having grown by 104%. The growth rate for job postings in London was 57% at that point, which was among the lowest across all regions.
+
+*  By May 2022, London was instead among the regions with the highest growth at 89%, above the UK growth rate of 83%.
+
+* In `r last_month_form`, the level of job postings in London had again decreased to a cumulative growth rate of 31%, while the UK growth rate had decreased to 50%.
+
+::: {.infobox .info_symbol}
+
+The change in the indexed level of job postings is sensitive to base effects and the date of indexation. Areas with historically low levels of job postings are more likely to experience higher growth rates.
+
+:::
+
+<br/>
+
+
+<a href="#top">Back to top</a>
+
+
+``` {r index_region_chart, echo=FALSE,fig.cap = figcap, out.width='100%'}
+
+
+#...............................................................................
+# Trend line for overall postings in UK
+#...............................................................................
+
+chart_name <- paste0("regions_index")
+
+region_names <-  c("London","UK",setdiff(uk_region_postings$geography_name,c("London","UK")))
+regions_n <- length(unique(uk_region_postings$geography_name))
+pal <- gla_pal(palette_type = "highlight",n=c(2,regions_n-2))
+pal_named <- setNames(object=pal,nm=region_names)
+sizes_named <- setNames(object=c(2 * mm_to_pt,1 * mm_to_pt, rep(0.5* mm_to_pt,regions_n-2)),nm=region_names)
+highlight_colour <- gla_pal(gla_theme = "default", main_colours  = "red",  n = 1)
+
+index_chart <- uk_region_postings %>% 
+  filter(soc_level==0 & date_day>="2018-01-01") %>% 
+    highlight_key(~geography_name,"Highlight a region") %>% # For highlighting 
+  ggplot(mapping = aes()) +
+  geom_point( #trick to make date appear separately and only once
+    show.legend = FALSE,
+    aes(x = date_day, 
+        y = 0 ,
+        text = paste0(format(date_day,"%B %Y"))),
+      colour=NA) + 
+  ggla_line(mapping=aes(x = date_day, 
+                y = index_mar20_postings,
+                group=factor(geography_name,levels=(region_names)),
+                colour = factor(geography_name,levels=(region_names)),
+                size = factor(geography_name,levels=(region_names)),
+                text = paste0(geography_name,": ",value_form(index_mar20_postings,s=3,d=0))))+
+  scale_size_manual(values = sizes_named,
+                    breaks = c("London","UK")) +
+  scale_colour_manual(values = pal_named,
+                      breaks = c("London","UK")) +
+  geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+             linetype = "dotted",
+             size = 1 * mm_to_pt,
+             colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+  ggla_axisat0() +
+  coord_cartesian(clip = 'off') +
+  scale_y_continuous(labels = comma_format()) +
+  scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
+  labs(title = paste0("Trend in online job postings by UK region or country"),
+       subtitle = paste0("Unique monthly online job postings to ",last_month_form,", indexed (March 2020 = 100)"),
+       caption = "Lightcast data, non-seasonally adjusted.") +
+  theme(plot.margin = unit(c(1,1,1,1), "cm"),
+        plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+    
+  
+  # Save
+  save_GLA_plot(chart_name)
+  save_GLA_plot(chart_name,path=AD_HOC,w=8,h=4)
+
+# Plotly
+## First make function to remove legend if not UK/London
+ 
+plotly_legend_hover_fix <- function(chart=NULL) {
+  skiptrace <- c()
+  chart_temp <- chart
+  legend_num <- length(chart_temp[["x"]][["data"]])
+  for (n in 1:legend_num) {
+    if ("name" %in% names(chart_temp[["x"]][["data"]][[n]])) {
+      if (chart_temp[["x"]][["data"]][[n]][["name"]] %in% c("London","UK")) {
+      } else {
+        chart_temp[["x"]][["data"]][[n]][["showlegend"]]=FALSE
+        skiptrace <- c(skiptrace,n)
+    }
+    }
+  }
+  chart_temp <- chart_temp %>% 
+    plotly::style(hoverinfo="skip",traces= skiptrace)
+  chart <<- chart_temp
+}   
+
+
+plotly <- LMU_plotly_settings(ch_name = index_chart,
+                      title_text = 'paste0("Job postings across regions")',
+                      subtitle_text = 'paste0("Unique monthly online job postings to ",last_month_form,", indexed (March 2020 = 100)")',
+                      hover_mode = "x unified") %>% 
+    plotly::highlight(color=highlight_colour,
+            on = NULL,
+            off = "plotly_doubleclick",
+            selectize=TRUE,
+            opacityDim=0.5,
+            selected = attrs_selected(
+              showlegend = FALSE)) %>% 
+  plotly_legend_hover_fix() 
+
+
+plotly 
+
+
+figcap <- paste0("Source: Lightcast ",format(ym(last_month),"%Y"),".","<br>","<br>", "Note: non-seasonally adjusted. March 2020 indicated by dotted line.")
+
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+``` {r la_post_stats, echo=FALSE}
+
+share_post_in_la <- 100* pull_dtpt(dt=postings_la_tot,flt='date_day==max(date_day)',vr="share_with_la")
+
+max_post_in_la_name <- postings_la_full %>% 
+  filter(date_day==max(date_day)) %>% 
+  filter(job_postings==max(job_postings)) %>% 
+  pull(geography_name)
+
+max_post_in_la_value <- postings_la_full %>% 
+  filter(date_day==max(date_day) & geography_name==max_post_in_la_name) %>% 
+  pull(job_postings)
+
+```
+
+## Local authority online job postings 
+
+<br/>
+
+The number of online postings for jobs varied for different areas within London. 
+
+For `r last_month_form`, the local authority area with the highest number of online postings was `r max_post_in_la_name` with `r value_form(max_post_in_la_value)` postings. However, the vast majority of online job postings do not specify a local authority at sub-London level. 
+
+::: {.infobox .caution_symbol}
+
+Data on job posting location is less robust at more granular levels of geography. In `r last_month_form`, only `r perc_form(share_post_in_la)`% of job postings specified a local authority. 
+
+:::
+
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+``` {r map_la, echo=FALSE,fig.cap = figcap_map, out.width='100%'}
+
+
+#...............................................................................
+# Maps for LA
+#...............................................................................
+  
+  # Define title and caption, rest is automatic
+  map_title <- paste0("Number of unique new job postings","<br>" ,last_month_form)
+  
+  
+  figcap_map <- paste0("Source: Lightcast ",format(ym(last_month),"%Y")," non-seasonally adjusted.<br>Contains Ordnance Survey data Crown copyright and database rights [2015].")
+
+  
+  # Static map
+  la_jobs_map_chart <- ggplot_map_output(dataset=la_jobs_map_data_geo,
+                    dt_var="job_postings",
+                    perc_bin=FALSE,
+                    bin_rounding=500,
+                    diverge_scale=FALSE, #whether negatives and positives needed
+                    pal_colour="blue",
+                    title=map_title,
+                    chart_name="la_postings",
+                    caption_txt=figcap_map)
+    
+  # Interactive map
+  leaflet_map_output(dataset=la_jobs_map_data_geo,
+                     dt_var="job_postings",
+                     perc_bin=FALSE,
+                     bin_rounding=500,
+                     diverge_scale=FALSE, #whether negatives and positives needed
+                     pal_colour="blue",
+                     title=map_title)
+```
+
+<br/>
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+
+::: {.tocify-extend-page data-unique="tocify-extend-page" style="height: 0;"}
+:::
