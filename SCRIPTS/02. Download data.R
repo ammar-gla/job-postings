@@ -541,6 +541,30 @@ indeed_postings <- read.csv(here("INPUT","indeed_regional_gb.csv")) %>%
   mutate(measure_value=100*monthly_mean/monthly_mean[date_day=="2020-03-01"]) %>%  #create index average in Feb20
   select(date_day,geography_name,measure_name,measure_name_clean,measure_value)
 
+# Textkernel data via ONS
+textkernel_postings <- readxl::read_excel(here("INPUT","professiondemandbylocalauthority.xlsx"),sheet="Table 8",skip=4) %>% 
+  clean_names() %>% 
+  rename(geography_name=region) %>% 
+  filter(geography_name=="London")%>% 
+  mutate(across(matches("\\w{3}_\\d{2}"),~na_if(., "[x]")),
+         across(matches("\\w{3}_\\d{2}"),~as.numeric(.))) %>% 
+  adorn_totals("row",name="London") %>% 
+  mutate(summary_profession_category=case_when(summary_profession_category=="-"~"Total",
+                                               TRUE  ~ summary_profession_category),
+         detailed_profession_category=case_when(detailed_profession_category=="-"~"Total",
+                                               TRUE  ~ detailed_profession_category),
+         measure_name="textkernel_index_mar20",
+         measure_name_clean="Textkernel")
+
+textkernel_postings_total <- textkernel_postings %>% 
+  filter(detailed_profession_category=="Total") %>% 
+  select(geography_name,matches("\\w{3}_\\d{2}"),measure_name,measure_name_clean) %>% 
+  pivot_longer(cols=matches("\\w{3}_\\d{2}"), names_to = "date_month",values_to = "job_postings") %>% 
+  mutate(date_day=lubridate::my(date_month),
+         measure_value=100*job_postings/job_postings[date_day=="2020-03-01"]) %>% 
+  select(date_day,geography_name,measure_name,measure_name_clean,measure_value)
+
+
 postings_helper <- postings_soc_full %>% 
   filter(soc_level==0) %>% 
   select(date_day,geography_name,index_mar20_postings) %>% 
@@ -549,8 +573,8 @@ postings_helper <- postings_soc_full %>%
          measure_name_clean="Lightcast")
 
 
-ons_indeed_postings <- ons_region_estimate %>% 
-  rbind(indeed_postings,postings_helper) %>% 
+ons_indeed_textkernel_postings <- ons_region_estimate %>% 
+  rbind(indeed_postings,postings_helper,textkernel_postings_total) %>% 
   arrange(date_day,measure_name)
 
 #_______________________________________________________________________________

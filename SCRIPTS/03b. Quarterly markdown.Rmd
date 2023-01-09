@@ -218,11 +218,11 @@ Trends in online job postings from Lightcast correlate well with similar data pu
 #...............................................................................
 
 chart_name <- paste0("comp_sources_chart")
-pal <- gla_pal(palette_type = "categorical",n=3)
-cat_names <- c("Lightcast","ONS estimated job adverts","Indeed")
+pal <- gla_pal(palette_type = "categorical",n=4)
+cat_names <- c("Lightcast","ONS estimated job adverts","Indeed","Textkernel")
 pal_named <- setNames(object=pal,nm=cat_names)
 
-comp_sources_chart <- ons_indeed_postings %>% 
+comp_sources_chart <- ons_indeed_textkernel_postings %>% 
   filter(between(date_day,"2020-01-01",last_month_date)) %>% 
   ggplot(mapping = aes()) +
   geom_point( #trick to make date appear separately and only once
@@ -249,7 +249,7 @@ comp_sources_chart <- ons_indeed_postings %>%
   scale_x_date(date_labels = "%Y",date_breaks = "1 year") +
   labs(title = paste0("Comparison of job postings data, London"),
        subtitle = paste0("Data to ",last_month_form,", indexed (March 2020=100)"),
-       caption = paste0("Source: Lightcast (monthly online job postings, non-seasonally adjusted), Indeed (average of daily online job postings), ONS (average of weekly online job adverts, non-seasonally adjusted).","\n",
+       caption = paste0("Source: Lightcast (monthly online job postings, non-seasonally adjusted), Indeed (average of daily online job postings), ONS (average of weekly online job adverts, non-seasonally adjusted; and Textkernel online job postings).","\n",
                         "Note: March 2020 indicated by dotted line.")) +
   theme(plot.margin = unit(c(1,1,1,1), "cm"),
         plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
