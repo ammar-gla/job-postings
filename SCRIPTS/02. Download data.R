@@ -1,10 +1,4 @@
 #_______________________________________________________________________________
-#### Initialise functions ####
-#_______________________________________________________________________________
-
-library("here") # To set project folder dynamically
-
-#_______________________________________________________________________________
 # SOC code data London ----
 #_______________________________________________________________________________
 
@@ -439,11 +433,11 @@ vac_path <- "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleno
 
 #Download latest file
 ons_vacancies_dl <- download.file( url = vac_path,
-                           destfile = paste0(INTERMEDIATE,format(as.Date(Sys.Date()),"%b_%y"),"_ONS_vacs02.xls"),
+                           destfile = paste0(OTHERDATA,format(as.Date(Sys.Date()),"%b_%y"),"_ONS_vacs02.xls"),
                            mode = "wb")
 
 # Import and clean ONS data
-ons_vacancies_level <-readxl::read_excel(path = here("INTERMEDIATE",paste0(format(as.Date(Sys.Date()),"%b_%y"),"_ONS_vacs02.xls")), sheet = "levels",skip=3)%>%
+ons_vacancies_level <-readxl::read_excel(path = paste0(OTHERDATA,format(as.Date(Sys.Date()),"%b_%y"),"_ONS_vacs02.xls"), sheet = "levels",skip=3) %>%
   clean_names() %>% 
   rename(all_vacancies=all_vacancies1,quarter=sic_2007_sections) %>% 
   filter(!is.na(all_vacancies)) %>% 
@@ -463,7 +457,7 @@ ons_vacancies_level <-readxl::read_excel(path = here("INTERMEDIATE",paste0(forma
   relocate(year,quarter,quart_end,date_day,index_2019_vacancies)
 
 # The # of vacancies per 100 jobs
-ons_vacancies_rate <-readxl::read_excel(path = here("INTERMEDIATE",paste0(format(as.Date(Sys.Date()),"%b_%y"),"_ONS_vacs02.xls")), sheet = "ratios",skip=3)%>%
+ons_vacancies_rate <-readxl::read_excel(path = paste0(OTHERDATA,format(as.Date(Sys.Date()),"%b_%y"),"_ONS_vacs02.xls"), sheet = "ratios",skip=3) %>%
   clean_names() %>% 
   rename(all_vacancies=all_vacancies1,quarter=sic_2007_sections) %>% 
   filter(!is.na(all_vacancies)) %>% 
@@ -508,7 +502,7 @@ emsi_ons_compare_data <- ons_vacancies_level %>%
 
 # Index all sources to March 2020, but note that Indeed and ONS already show fall from feb to march
 
-ons_region_estimate <- readxl::read_excel(path = here("INPUT",paste0("onlinejobadvertestimatesdataset131022.xlsx")), sheet = "Adverts by region Feb 2020 DD",skip=2) %>% 
+ons_region_estimate <- readxl::read_excel(path = paste0(INPUT,"onlinejobadvertestimatesdataset131022.xlsx"), sheet = "Adverts by region Feb 2020 DD",skip=2) %>% 
   rename(geography_name="...2") %>% 
   filter(geography_name=="London") %>% 
   pivot_longer(cols=matches("\\d+"),names_to = "date_day_help",values_to="measure_value_help",
